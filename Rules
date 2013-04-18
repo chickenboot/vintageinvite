@@ -21,6 +21,11 @@ compile '/assets/stylesheets/*' do
   filter :sass, Compass.sass_engine_options.merge(:syntax => item[:extension].to_sym)
 end
 
+compile '/assets/javascripts/*' do
+  filter :erb
+  filter :uglify_js if  @config[:javascripts][:passthrough].include?(File.basename(item.identifier))
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -30,10 +35,17 @@ compile '*' do
   end
 end
 
-route '/assets/*' do
-  # flatten assets to the output/assets directory a la rails
-  extension = if item[:extension] =~ /ss$/ then 'css' else item[:extension] end
-  '/assets/' + File.basename(item.identifier) + '.' + extension
+route '/assets/images/*' do
+  #'/assets/' + item.identifier.chop + '.' + item[:extension]
+end
+
+route '/assets/stylesheets/*' do
+  '/assets/' + File.basename(item.identifier) + '.css'
+end
+
+route '/assets/javascripts/*' do
+  filename = File.basename(item.identifier)
+  '/assets/' + filename + '.js' if @config[:javascripts][:passthrough].include?(filename)
 end
 
 route '*' do

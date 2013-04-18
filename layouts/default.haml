@@ -6,19 +6,24 @@
       A Brand new nanoc site -
       = item[:title]
     %link{:rel => "stylesheet", :href => "/assets/app.css" }
+    %script{:src => "/assets/modernizr.foundation.js" }
   %body
-    .header
-      .contain-to-grid
-        %nav.top-bar
-          %ul
-            %li.name
-              %a{:href => "/"} the vintage invite co
-            %li.toggle-topbar
-              %a{:href => "#"}
-          %section
-            %ul.right
-              %li
-                %a{:href => "#"} Contact
+    .contain-to-grid
+      %nav.top-bar
+        %ul
+          %li.name
+            %a{:href => "/"} the vintage invite co
+          %li.toggle-topbar
+            %a{:href => "#"}
+        %section
+          %ul.left
+            %li
+              %a{:href => "#"} Hello
+          %ul.right
+            %li
+              %a{:href => "#"} Contact
     .row
       .twelve.columns
         = yield
+
+    %script{:src => "/assets/app.js" }

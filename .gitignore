@@ -2,3 +2,6 @@ tmp
 crash.log
 output
 .sass-cache
+.DS_Store
+.idea
+
