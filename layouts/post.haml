@@ -1,0 +1,5 @@
+= render 'default' do
+  .post
+    %h3= item[:title]
+    %aside= "Posted on #{attribute_to_time(item[:created_at]).strftime('%A, %B %-d %Y')}"
+    %article= yield

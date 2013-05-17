@@ -26,6 +26,11 @@ compile '/assets/javascripts/*' do
   filter :uglify_js if  @config[:javascripts][:passthrough].include?(File.basename(item.identifier))
 end
 
+compile '/blog/posts/*' do
+  filter :kramdown
+  layout 'post'
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -46,6 +51,12 @@ end
 route '/assets/javascripts/*' do
   filename = File.basename(item.identifier)
   '/assets/' + filename + '.js' if @config[:javascripts][:passthrough].include?(filename)
+end
+
+route '/blog/posts/*' do
+  y,m,d,slug = /([0-9]+)\-([0-9]+)\-([0-9]+)\-([^\/]+)/.match(item.identifier).captures
+
+  "/blog/#{y}/#{m}/#{slug}/index.html"
 end
 
 route '*' do
