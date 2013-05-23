@@ -84,5 +84,3 @@ javascripts:
   passthrough:
     - modernizr.foundation
     - app
-
-base_url: http://localhost:3000
