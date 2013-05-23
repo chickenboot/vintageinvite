@@ -1,0 +1,17 @@
+- posts = defined?(tag) ? items_with_tag(tag) : sorted_articles
+
+%h2= page_title
+.row
+  .ten.columns
+    - posts.each do |article|
+      %h3
+        = attribute_to_time(article[:created_at]).strftime('%d %B %Y')
+        &raquo;
+        = link_to article[:title], article.path
+      = article.compiled_content
+      %hr
+  .two.columns
+    %h5 Tags
+    %ul.no-bullet
+      - all_tags(posts, true).each do |t,v|
+        %li= link_for_tag(t, '/blog/tags/')
