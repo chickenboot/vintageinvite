@@ -27,7 +27,7 @@ end
 
 compile '/assets/javascripts/*' do
   filter :erb
-  filter :uglify_js if  @config[:javascripts][:passthrough].include?(File.basename(item.identifier))
+  filter :uglify_js if @config[:javascripts][:passthrough].include?(File.basename(item.identifier))
 end
 
 compile '/blog/posts/*' do
@@ -45,7 +45,7 @@ compile '*' do
 end
 
 route '/assets/images/*' do
-  #'/assets/' + item.identifier.chop + '.' + item[:extension]
+  item.identifier.sub(/\/images/,'').chop.sub(/_+$/, '') + '.' + item[:extension]
 end
 
 route '/assets/stylesheets/*' do

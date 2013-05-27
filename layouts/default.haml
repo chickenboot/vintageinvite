@@ -3,19 +3,17 @@
   %head
     %meta{:charset => "utf-8"}
     %title
-      The Vintage Invite Co -
+      The Vintage Invite Company -
       = item[:title]
     %link{:rel => "stylesheet", :href => "/assets/app.css" }
     %script{:src => "/assets/modernizr.foundation.js" }
   %body
-    .contain-to-grid
-      %nav.top-bar
-        %ul
-          %li.name
-            %a{:href => "/"} the vintage invite co
-          %li.toggle-topbar
-            %a{:href => "#"}
-        %section
+    .row
+      .vic-topbar
+        .four.columns
+          %a{:href => "/"}
+            %img{:src => "/assets/logo.svg", :title => "The Vintage Invite Company"}
+        .eight.columns
           %ul.right
             %li
               %a{:href => "/blog/"} Blog

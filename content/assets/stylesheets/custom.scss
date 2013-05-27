@@ -1,0 +1,22 @@
+@import "settings";
+
+$vicLogoMainColor: #e966a6;
+$vicLogoSecondaryColor: #9ad5c4;
+
+.vic-topbar { min-height: 120px; margin: 15px 0 20px 0;
+  @media screen and (max-width: $screenSmall - 1) { text-align: center; }
+  a img { margin-top: 5px; max-height: 200px;
+    @media screen and (min-width: $screenSmall) { max-width: 200px;}
+  }
+  ul { list-style: none; margin-top: 45px;
+    @media screen and (max-width: $screenSmall - 1) {
+      display: inline-block;
+    }
+    li { float: left; padding: 0 15px; font-size: 20px; font-weight: bold;
+      a { color: $vicLogoMainColor; }
+      &:hover, &.active, &:focus {
+        a, & { color: $vicLogoSecondaryColor; }
+      }
+    }
+  }
+}
