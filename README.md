@@ -7,8 +7,8 @@ Uses nanoc, compass and Zurb's Foundation.
 
 ### LICENSING
 
-Everything in `content/assets/images/tvi`, `content/blog` is (c) The Vintage Invite Company.
+Everything in `content/assets/images/` (not including `foundation` or anything else that isn't ours...), `content/blog/posts` is (c) The Vintage Invite Company.
 
-Everything with a license already attached should obviously follow their licenses.
+Vendor libraries (compass/zurb have their associated licenses).
 
-Everything without is MIT licensed.
+All the layout and styling code is MIT licensed.
