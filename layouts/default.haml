@@ -1,7 +1,20 @@
+:ruby
+  def nav_li(s)
+    if item.identifier == "/#{s}/"
+      haml_tag('li', s.capitalize, :class => 'active')
+    else
+      haml_tag('li') do
+        haml_tag('a', s.capitalize, :href => "/#{s}/")
+      end
+    end
+  end
+
 !!! 5
 %html
   %head
     %meta{:charset => "utf-8"}
+    %meta{:name => "viewport", :content => "width=device-width" }
+
     %title
       The Vintage Invite Company -
       = item[:title]
@@ -15,12 +28,16 @@
             %img{:src => "/assets/logo.svg", :title => "The Vintage Invite Company"}
         .eight.columns
           %ul.right
-            %li
-              %a{:href => "/blog/"} Blog
-            %li
-              %a{:href => "#"} Contact
+            - nav_li('blog')
+            - nav_li('about')
+            - nav_li('contact')
     .row
       .twelve.columns
         = yield
 
     %script{:src => "/assets/app.js" }
+    - if item[:orbit]
+      :javascript
+        $(window).load(function() {
+          $("##{item[:orbit]}").orbit({ animation: 'fade', timer: false, bullets: true});
+        });
