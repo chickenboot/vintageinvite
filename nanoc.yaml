@@ -78,7 +78,6 @@ watcher:
 
 javascripts:
   compile:
-    - modernizr.foundation
     - jquery
     - jquery.foundation.topbar
     - jquery.foundation.orbit
