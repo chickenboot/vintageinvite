@@ -62,3 +62,16 @@ footer {
 .bold-links {
   a { font-weight: bold; }
 }
+
+.temppad {
+  padding-top: 45px;
+}
+
+.temp-feature {
+  h1, h2, h3, h4, h5, h6 {
+    color: $vicLogoMainColor;
+    font-family: "Trebuchet MS", Helvetica, serif;
+  }
+  padding-top: 80px;
+  padding-bottom: 40px;
+}

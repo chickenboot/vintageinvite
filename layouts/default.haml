@@ -26,17 +26,6 @@
   %link{:rel => "stylesheet", :href => "/assets/app.css" }
   %script{:src => "/assets/modernizr.foundation.js" }
 %body
-  .row
-    .vic-topbar
-      .four.columns
-        %a{:href => "/"}
-          %img{:src => "/assets/logo.svg", :title => "The Vintage Invite Company"}
-      .eight.columns
-        %ul.right
-          - nav_li('blog')
-          /- nav_li('bespoke', 'Go Bespoke')
-          /- nav_li('about', 'About Us')
-          - nav_li('contact', nil, "/#contact")
   = yield
 
   %script{:src => "/assets/app.js" }
@@ -54,7 +43,11 @@
       %a{:href => 'http://facebook.com/thevintageinviteco', :title => 'Facebook'}
         %i.icon-facebook
     .sm-button
+      %a{:href => 'http://thevintageinviteco.tumblr.com', :title => 'Our Blog'}
+        %i.icon-tumblr
+    .sm-button
       %a{:href => 'http://twitter.com/thevintageinviteco', :title => 'Twitter'}
         %i.icon-twitter
+
 :plain
   </html>
