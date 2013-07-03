@@ -39,22 +39,36 @@ compile '*' do
   if item.binary?
     # don’t filter binary items
   else
-    filter :haml
+    # mgutz: https://github.com/mgutz/nanoc3_blog/blob/master/Rules
+    # item[:extension] returns 'html.erb' for multi-dotted filename
+    ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+
+    if ext == 'erb'
+      filter :erb
+    elsif ext == 'haml' || ext.nil?
+      filter :haml
+    elsif ext == 'md' || ext == 'markdown'
+      filter :erb
+      filter :kramdown
+    else
+      raise "Filter is not configured for #{item.identifier} in Rules file."
+    end
     layout 'default'
   end
 end
 
-route '/assets/images/*' do
-  item.identifier.sub(/\/images/,'').chop.sub(/_+$/, '') + '.' + item[:extension]
-end
-
 route '/assets/stylesheets/*' do
-  '/assets/' + File.basename(item.identifier) + '.css'
+  filename = File.basename(item.identifier)
+  '/assets/' + filename + '.css' if filename == 'app'
 end
 
 route '/assets/javascripts/*' do
   filename = File.basename(item.identifier)
   '/assets/' + filename + '.js' if @config[:javascripts][:passthrough].include?(filename)
+end
+
+route '/assets/*' do
+  item.identifier.chop.sub(/\/images|\/fonts/, '').sub(/_+$/, '') + '.' + item[:extension]
 end
 
 route '/blog/posts/*' do

@@ -4,17 +4,46 @@ orbit: main-orbit
 ---
 
 .row
-  .twelve.columns
+  .twelve.columns.nopadding
     #main-orbit
-      %img{:src => "http://placehold.it/1500x500&text=Slide%201"}
-      %img{:src => "http://placehold.it/1500x500&text=Slide%202"}
-      %img{:src => "http://placehold.it/1500x500&text=Slide%203"}
+      %img{:src => "/assets/carousel-3.jpg"}
+      %img{:src => "/assets/carousel-2.jpg"}
+      %img{:src => "/assets/carousel-1.jpg"}
 .row
   .twelve.columns
-    %h2.text-center An impressive title goes here
-    %h4.text-center.subheader And an equally impressive subtitle should go here
-.row
-  .twelve.columns
-    %h4.text-center
-      Take a look at
-      %a{:href => "/blog/"} our blog
+    %h2.text-center Start your wedding in style
+    %h3.text-center.subheader Let us create your perfect invite
+.marketing-feature
+  .row
+    .four.columns.marketing
+      %h3 Unique Designs
+      %p You won't find designs like ours anywhere else! Our designers are really good. Really good. Is this three lines yet?
+    .four.columns.marketing
+      %h3 Finest Quality
+      %p We use the best materials money can buy, and use printing methods which ensure that you get the most amazing result from our innovative designs
+    .four.columns.marketing
+      %h3 It's All About...
+      %p We understand how special you are. You really are a special person. And we treat you like one. Always.
+%a{:id => 'contact'}
+.featurette
+  .row
+    .four.columns.hide-for-small
+      %img{:src => "/assets/logo.svg", :title => "The Vintage Invite Company"}
+    .eight.columns
+      %h3 Contact Us
+      %p.bold-links
+        We'd love to hear from you! Like us on
+        = "#{link_to('facebook', 'http://facebook.com/thevintageinviteco')},"
+        follow us on
+        = "#{link_to('twitter', 'http://twitter.com/thevintageinviteco')},"
+        or just drop us a good old fashioned email at
+        = "#{link_to('hello@thevintageinvite.com', 'mailto:hello@thevintageinvite.com')}!"
+      %p
+        You can also join our mailing list to hear first when we release new designs, blog posts and offers!
+        %form.validate{:action=>"http://thevintageinvite.us7.list-manage1.com/subscribe/post?u=14f010ba1169be1d21a9a1656&amp;id=c50b20307c", :method=>"post", :id=>"mc-embedded-subscribe-form", :name=>"mc-embedded-subscribe-form", :target=>"_blank"}
+          .row.collapse
+            .ten.mobile-three.columns
+              %input.email{:type=>"email", :value=>"", :name=>"EMAIL", :id=>"mce-EMAIL", :placeholder=>"Email Address"}
+            .two.mobile-one.columns
+              %input.button.expand.postfix{:type=>"submit", :value=>"Subscribe", :name=>"subscribe", :id=>"mc-embedded-subscribe"}
+

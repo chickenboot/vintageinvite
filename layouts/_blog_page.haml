@@ -1,10 +1,12 @@
 - posts = defined?(tag) ? items_with_tag(tag) : sorted_articles
 
-%h2= page_title
+/.row
+/  .twelve.columns
+/    %h4= page_title
 .row
   .ten.columns
     - posts.each do |article|
-      %h3
+      %h4
         = attribute_to_time(article[:created_at]).strftime('%d %B %Y')
         &raquo;
         = link_to article[:title], article.path

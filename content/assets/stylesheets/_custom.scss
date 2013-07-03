@@ -1,0 +1,64 @@
+@import "settings";
+
+$vicLogoMainColor: #e966a6;
+$vicLogoSecondaryColor: #9ad5c4;
+$featureColor: rgb(245, 247, 248);
+
+.vic-topbar { min-height: 120px; margin: 15px 0 20px 0;
+  @media screen and (max-width: $screenSmall - 1) { text-align: center; }
+  a img { margin-top: 5px; max-height: 200px;
+    @media screen and (min-width: $screenSmall) { max-width: 200px;}
+  }
+  ul { list-style: none; margin-top: 45px;
+    @media screen and (max-width: $screenSmall - 1) {
+      display: inline-block;
+    }
+    li { float: left; margin: 0 15px; padding: 0; font-size: 20px; font-weight: bold;
+      a { color: $vicLogoMainColor; }
+      &:hover, &.active, &:focus {
+        border-bottom: 2px solid $vicLogoSecondaryColor;
+        a, & { color: $vicLogoSecondaryColor; }
+      }
+    }
+  }
+}
+
+.nopadding {
+  padding: 0px !important;
+}
+
+.marketing-feature {
+  padding: 50px 0;
+  background: $featureColor;
+}
+.feature, .featurette {
+  padding: 100px 0;
+  img { padding: 10px 20px; }
+}
+
+.feature {
+  background: $featureColor;
+}
+
+footer {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+    margin: 0;
+    padding: 6px 8px;
+    display: inline-block;
+  }
+}
+
+.sm-button {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: ms(4);
+  a { color: $vicLogoMainColor; }
+  &:hover, &.active, &:focus {
+    a, & { color: $vicLogoSecondaryColor; }
+  }
+}
+
+.bold-links {
+  a { font-weight: bold; }
+}

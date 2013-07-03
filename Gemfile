@@ -1,6 +1,7 @@
 source :rubygems
 
 gem 'nanoc'
+gem 'guard-nanoc'
 gem 'adsf'
 gem 'haml'
 gem 'zurb-foundation', '~> 3.2.5'

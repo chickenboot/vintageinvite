@@ -1,10 +1,11 @@
 :ruby
-  def nav_li(s)
+  def nav_li(s, title=nil, href=nil)
+    href ||= "/#{s}/"
     if item.identifier == "/#{s}/"
-      haml_tag('li', s.capitalize, :class => 'active')
+      haml_tag('li', title || s.capitalize, :class => 'active')
     else
       haml_tag('li') do
-        haml_tag('a', s.capitalize, :href => "/#{s}/")
+        haml_tag('a', title || s.capitalize, :href => href)
       end
     end
   end
@@ -33,11 +34,10 @@
       .eight.columns
         %ul.right
           - nav_li('blog')
-          - nav_li('about')
-          - nav_li('contact')
-  .row
-    .twelve.columns
-      = yield
+          /- nav_li('bespoke', 'Go Bespoke')
+          /- nav_li('about', 'About Us')
+          - nav_li('contact', nil, "/#contact")
+  = yield
 
   %script{:src => "/assets/app.js" }
   - if item[:orbit]
@@ -45,5 +45,16 @@
       $(window).load(function() {
         $("##{item[:orbit]}").orbit({ animation: 'fade', timer: false, bullets: true});
       });
+%footer
+  .twelve.columns.text-center
+    .sm-button
+      %a{:href => 'mailto:hello@thevintageinvite.com', :title => 'Email Us'}
+        %i.icon-envelope
+    .sm-button
+      %a{:href => 'http://facebook.com/thevintageinviteco', :title => 'Facebook'}
+        %i.icon-facebook
+    .sm-button
+      %a{:href => 'http://twitter.com/thevintageinviteco', :title => 'Twitter'}
+        %i.icon-twitter
 :plain
   </html>
