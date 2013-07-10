@@ -1,6 +1,7 @@
 @import "foundation/common/ratios";
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
 
 // Settings file containing Foundation defaults
 
@@ -13,11 +14,13 @@
 // $blockGridElements: 12; // Highest number of block grid elements, Maximum of 24 supported
 
 // Colors Settings
+$vicLogoMainColor: #e966a6;
+$vicLogoSecondaryColor: #9ad5c4;
 
 $mainColor: #2ba6cb;
-// $secondaryColor: #e9e9e9;
+$successColor: $vicLogoMainColor;
 // $alertColor: #c60f13;
-// $successColor: #5da423;
+$secondaryColor: $vicLogoSecondaryColor;
 // $txtColor: #222;
 // $highlightColor: #ffff99;
 // $black: #000;
@@ -26,13 +29,20 @@ $white: #fff;
 // $darkEdge: rgba(#000, .2);
 
 // Font Settings
+$frontPageColor: #999;
+$mainHeadingFontFamily: Bitter, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$mainHeadingFontWeight: bold;
+
+$blurbFontFamily: "Libre Baskerville", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$blurbFontWeight: normal;
+$blurbLetterSpacing: 3px;
 
 // $fontSmoothing: antialiased;
-$headerFontFamily: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $headerFontWeight: bold;
 // $headerFontStyle: normal;
 // $headerFontColor: #222;
-$bodyFontFamily: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $bodyFontWeight: normal;
 // $bodyFontStyle: normal;
 // $bodyFontColor: $txtColor;
@@ -240,7 +250,7 @@ $bodyFontFamily: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, s
 
 // $ratio: $golden; // THIS IS DEFAULT IN MODULAR-SCALE
 $baseFontSize: 14px;
-// $importantModNum: 44px;
+$importantModNum: 50px;
 // $base-size: $baseFontSize $importantModNum;
 // Produced the following list of values: 14, 17, 23, 27, 37, 44, 59, 71, 95, 115;
 // http://www.modularscale.com by Tim Brown

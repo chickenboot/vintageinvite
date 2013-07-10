@@ -1,7 +1,5 @@
 @import "settings";
 
-$vicLogoMainColor: #e966a6;
-$vicLogoSecondaryColor: #9ad5c4;
 $featureColor: rgb(245, 247, 248);
 
 .vic-topbar { min-height: 120px; margin: 15px 0 20px 0;
@@ -23,6 +21,34 @@ $featureColor: rgb(245, 247, 248);
   }
 }
 
+.blurb {
+  font-family: $blurbFontFamily;
+  font-weight: $blurbFontWeight;
+  letter-spacing: $blurbLetterSpacing;
+  color: $frontPageColor;
+  margin-bottom: 4px;
+}
+
+.coming-soon {
+  font-family: $mainHeadingFontFamily !important;
+  font-weight: $mainHeadingFontWeight !important;
+  color: $frontPageColor !important;
+  letter-spacing: 9px;
+}
+
+.fp-para {
+  letter-spacing: 2px;
+}
+
+.mailing-list {
+  margin: 8px 0;
+  //  input { margin: 0px !important; }
+}
+hr.wavy {
+  background: url(/assets/hr.png) repeat-x;
+  height: 8px;
+  border: 0px;
+}
 .nopadding {
   padding: 0px !important;
 }
@@ -53,9 +79,9 @@ footer {
   display: inline-block;
   padding: 4px 8px;
   font-size: ms(4);
-  a { color: $vicLogoMainColor; }
+  a { color: $vicLogoSecondaryColor; }
   &:hover, &.active, &:focus {
-    a, & { color: $vicLogoSecondaryColor; }
+    a, & { color: $vicLogoMainColor; }
   }
 }
 
@@ -64,7 +90,7 @@ footer {
 }
 
 .temppad {
-  padding-top: 45px;
+  padding-top: 64px;
 }
 
 .temp-feature {
@@ -74,4 +100,8 @@ footer {
   }
   padding-top: 80px;
   padding-bottom: 40px;
+}
+
+.button {
+
 }
