@@ -1,6 +1,6 @@
 @import "foundation/common/ratios";
 
-@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
 
 // Settings file containing Foundation defaults
@@ -30,8 +30,8 @@ $white: #fff;
 
 // Font Settings
 $frontPageColor: #999;
-$mainHeadingFontFamily: Bitter, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$mainHeadingFontWeight: bold;
+$mainHeadingFontFamily: Montserrat, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$mainHeadingFontWeight: normal;
 
 $blurbFontFamily: "Libre Baskerville", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $blurbFontWeight: normal;
@@ -42,7 +42,7 @@ $headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $headerFontWeight: bold;
 // $headerFontStyle: normal;
 // $headerFontColor: #222;
-$bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$bodyFontFamily: Georgia, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $bodyFontWeight: normal;
 // $bodyFontStyle: normal;
 // $bodyFontColor: $txtColor;

@@ -2,19 +2,53 @@
 
 $featureColor: rgb(245, 247, 248);
 
-.vic-topbar { min-height: 120px; margin: 15px 0 20px 0;
-  @media screen and (max-width: $screenSmall - 1) { text-align: center; }
-  a img { margin-top: 5px; max-height: 200px;
+.top-colour {
+  height: 13px;
+  position: absolute;
+  width: 100%;
+  border: 0px;
+  background: $vicLogoSecondaryColor;
+}
+
+.logo {
+  padding: 36px 0 0 0;
+  a img {
+    max-height: 200px;
     @media screen and (min-width: $screenSmall) { max-width: 200px;}
   }
-  ul { list-style: none; margin-top: 45px;
-    @media screen and (max-width: $screenSmall - 1) {
-      display: inline-block;
-    }
-    li { float: left; margin: 0 15px; padding: 0; font-size: 20px; font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.header {
+  font-family: $mainHeadingFontFamily;
+  font-weight: $mainHeadingFontWeight;
+  font-size: 18px;
+}
+
+#vic-topbar { 
+  margin: 0;
+//min-height: 120px;
+  width: 100%;
+  .navigation {
+    margin: 0; 
+    padding: 10px 0 8px 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  ul { 
+    list-style: none; 
+    li { 
+      display: inline-block;    
+      margin: 0 0px; padding: 0 27px;
+      @media screen and (max-width: $screenSmall - 1) {
+        display: block;
+        width: 100% !important;
+        padding: 5px 0;
+      }
+    
       a { color: $vicLogoMainColor; }
       &:hover, &.active, &:focus {
-        border-bottom: 2px solid $vicLogoSecondaryColor;
         a, & { color: $vicLogoSecondaryColor; }
       }
     }
@@ -48,6 +82,12 @@ hr.wavy {
   background: url(/assets/hr.png) repeat-x;
   height: 8px;
   border: 0px;
+}
+hr.zig {
+  background: url(/assets/zig.png) repeat-x;
+  height: 8px;
+  border: 0px;
+  margin: 0;
 }
 .nopadding {
   padding: 0px !important;

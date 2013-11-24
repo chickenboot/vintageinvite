@@ -1,11 +1,11 @@
 :ruby
   def nav_li(s, title=nil, href=nil)
     href ||= "/#{s}/"
-    if item.identifier == "/#{s}/"
-      haml_tag('li', title || s.capitalize, :class => 'active')
+    if item.identifier == href
+      haml_tag('li', title || s.upcase, :class => 'active header')
     else
       haml_tag('li') do
-        haml_tag('a', title || s.capitalize, :href => href)
+        haml_tag('a', title || s.upcase, :href => href, :class => 'header')
       end
     end
   end
@@ -19,13 +19,44 @@
 %head
   %meta{:charset => "utf-8"}
   %meta{:name => "viewport", :content => "width=device-width" }
+  :plain
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42400269-1', 'thevintageinvite.com');
+      ga('send', 'pageview');
+    </script>
 
   %title
     The Vintage Invite Company -
     = item[:title]
   %link{:rel => "stylesheet", :href => "/assets/app.css" }
   %script{:src => "/assets/modernizr.foundation.js" }
+  %meta{:name => "description", :content => item[:description] || "Bespoke, beautiful wedding stationery from the Vintage Invite Company"}
+  %meta{:name => "google-site-verification", :content => "6dWQ4akHkmg07CqQZcHbv6zGvDOwKl8H38RL9qS3TmM"}
 %body
+  .top-colour &nbsp;
+  .row.logo
+    .twelve.columns.centered.text-center
+      %a{:href => "/"}
+        %img{:src => "/assets/logo.svg", :title => "The Vintage Invite Company"}
+  .row
+    %hr.zig
+  .row
+    .twelve.columns
+      %nav#vic-topbar
+        %ul.navigation
+          - nav_li('', 'HOME', '/')
+          - nav_li('about', 'ABOUT US')
+          - nav_li('range')
+          - nav_li('order', 'HOW TO ORDER')
+          - nav_li('contact')
+          - nav_li('blog', nil,'http://blog.thevintageinvite.com')
+  .row
+    %hr.zig
   = yield
 
   %script{:src => "/assets/app.js" }
