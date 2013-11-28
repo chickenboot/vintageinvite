@@ -1,6 +1,16 @@
 @import "settings";
 
-$featureColor: rgb(245, 247, 248);
+.banner {
+  height: 50px;
+  border: 0;
+  margin: 8px 0 8px 0;
+  width: 100%;
+  background: $vicLogoSecondaryColor;
+}
+
+.cover {
+  padding: 8px 0;
+}
 
 .top-colour {
   height: 13px;
@@ -10,28 +20,77 @@ $featureColor: rgb(245, 247, 248);
   background: $vicLogoSecondaryColor;
 }
 
+.circle {
+  border-radius: 50%;
+}
+
+.square {
+}
+
+.footer {
+  background: $vicLogoSecondaryColor;
+  padding-top: 0;
+  margin-top: 0;
+  height: 100px;
+}
+
+.pinking {
+  background: url(/assets/pinking.png) repeat-x;
+  height: 6px;
+  border: 0;
+  margin: 40px 0 0 0;
+  width: 100%;
+  padding: 0;
+}
+
+.range {
+  height: 220px;
+  width: 220px;
+  text-align: center;
+  background: url(http://placehold.it/220x220);
+  img {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+.rangerow {
+  margin: 12px 0;
+  display: block;
+  h4 {
+    font-family: $mainHeadingFontFamily;
+    color: $vicLogoMainColor;
+    font-weight: $mainHeadingFontWeight;
+    font-size: 14px;
+  }
+}
+
+.sub {
+  font-style: italic;
+  color: #89857E;
+}
+
 .logo {
   padding: 36px 0 0 0;
   a img {
     max-height: 200px;
     @media screen and (min-width: $screenSmall) { max-width: 200px;}
   }
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .header {
   font-family: $mainHeadingFontFamily;
   font-weight: $mainHeadingFontWeight;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #vic-topbar { 
   margin: 0;
-//min-height: 120px;
   width: 100%;
   .navigation {
     margin: 0; 
-    padding: 10px 0 8px 0;
+    padding: 0; //10px 0 8px 0;
     text-align: center;
     width: 100%;
     height: auto;
@@ -55,93 +114,13 @@ $featureColor: rgb(245, 247, 248);
   }
 }
 
-.blurb {
-  font-family: $blurbFontFamily;
-  font-weight: $blurbFontWeight;
-  letter-spacing: $blurbLetterSpacing;
-  color: $frontPageColor;
-  margin-bottom: 4px;
-}
-
-.coming-soon {
-  font-family: $mainHeadingFontFamily !important;
-  font-weight: $mainHeadingFontWeight !important;
-  color: $frontPageColor !important;
-  letter-spacing: 9px;
-}
-
-.fp-para {
-  letter-spacing: 2px;
-}
-
-.mailing-list {
-  margin: 8px 0;
-  //  input { margin: 0px !important; }
-}
-hr.wavy {
-  background: url(/assets/hr.png) repeat-x;
-  height: 8px;
-  border: 0px;
-}
 hr.zig {
   background: url(/assets/zig.png) repeat-x;
-  height: 8px;
+  height: 9px;
   border: 0px;
-  margin: 0;
+  margin: 6px 0 6px 0;
 }
-.nopadding {
+
+.nopad {
   padding: 0px !important;
-}
-
-.marketing-feature {
-  padding: 50px 0;
-  background: $featureColor;
-}
-.feature, .featurette {
-  padding: 100px 0;
-  img { padding: 10px 20px; }
-}
-
-.feature {
-  background: $featureColor;
-}
-
-footer {
-  h1, h2, h3, h4, h5, h6 {
-    line-height: 1;
-    margin: 0;
-    padding: 6px 8px;
-    display: inline-block;
-  }
-}
-
-.sm-button {
-  display: inline-block;
-  padding: 4px 8px;
-  font-size: ms(4);
-  a { color: $vicLogoSecondaryColor; }
-  &:hover, &.active, &:focus {
-    a, & { color: $vicLogoMainColor; }
-  }
-}
-
-.bold-links {
-  a { font-weight: bold; }
-}
-
-.temppad {
-  padding-top: 64px;
-}
-
-.temp-feature {
-  h1, h2, h3, h4, h5, h6 {
-    color: $vicLogoMainColor;
-    font-family: "Trebuchet MS", Helvetica, serif;
-  }
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
-.button {
-
 }
