@@ -12,6 +12,10 @@
   padding: 8px 0;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .top-colour {
   height: 13px;
   position: absolute;
@@ -36,7 +40,7 @@
 
 .pinking {
   background: url(/assets/pinking.png) repeat-x;
-  height: 6px;
+  height: 4px;
   border: 0;
   margin: 40px 0 0 0;
   width: 100%;
@@ -54,19 +58,30 @@
   }
 }
 
+.domesticbliss {
+  background: url(/assets/domesticblissmain220.jpg);
+}
+.cherries {
+  background: url(/assets/cherrybombmain220.jpg);
+}
+.knitone {
+  background: url(/assets/knitonemain220.jpg);
+}
+.hera {
+  background: url(/assets/heramain220.jpg);
+}
 .rangerow {
   margin: 12px 0;
   display: block;
-  h4 {
-    font-family: $mainHeadingFontFamily;
-    color: $vicLogoMainColor;
-    font-weight: $mainHeadingFontWeight;
-    font-size: 14px;
+  h6 {
+    margin: 9px 0 9px 0;
+  }
+  h5 {
+
   }
 }
 
 .sub {
-  font-style: italic;
   color: #89857E;
 }
 
@@ -82,7 +97,15 @@
 .header {
   font-family: $mainHeadingFontFamily;
   font-weight: $mainHeadingFontWeight;
-  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.hfont {
+  font-family: $headerFontFamily;
+}
+
+.main-color {
+  color: $vicLogoMainColor;
 }
 
 #vic-topbar { 
@@ -116,7 +139,7 @@
 
 hr.zig {
   background: url(/assets/zig.png) repeat-x;
-  height: 9px;
+  height: 5px;
   border: 0px;
   margin: 6px 0 6px 0;
 }

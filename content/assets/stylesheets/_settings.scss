@@ -1,7 +1,8 @@
 @import "foundation/common/ratios";
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+//@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+//@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
 
 // Settings file containing Foundation defaults
 
@@ -30,7 +31,7 @@ $white: #fff;
 
 // Font Settings
 $frontPageColor: #999;
-$mainHeadingFontFamily: Montserrat, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$mainHeadingFontFamily: Lato, "Century Gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $mainHeadingFontWeight: normal;
 
 $blurbFontFamily: "Libre Baskerville", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -38,10 +39,10 @@ $blurbFontWeight: normal;
 $blurbLetterSpacing: 3px;
 
 // $fontSmoothing: antialiased;
-$headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $headerFontWeight: bold;
+$headerFontFamily: Lato, "Century Gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$headerFontWeight: normal;
 // $headerFontStyle: normal;
-// $headerFontColor: #222;
+$headerFontColor: $vicLogoMainColor;
 $bodyFontFamily: Georgia, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $bodyFontWeight: normal;
 // $bodyFontStyle: normal;
