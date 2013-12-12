@@ -3,19 +3,26 @@ title: Contact Us
 ---
 
 .row
+  .twelve.columns
+    .paddy &nbsp;
+.row
   .four.columns
-    .hfont.main-color SOCIAL MEDIA
+    .hfont.main-color FOLLOW US
     .sub
       %a{:href => 'http://twitter.com/vintageinviteco'} Twitter
     .sub
       %a{:href => 'http://facebook.com/vintageinviteco'} Facebook
   .eight.columns
     %p.hfont
-      Drop us an e-mail please
+      We love hearing from you! Drop us an e-mail at
+      %a{:href => 'mailto:hello@thevintageinvite.com'} hello@thevintageinvite.com
+      or fill in our lovely contact form below:
     %form
-      %label Name
+      %label.hfont Name
       %input{:type=>'text'}
-      %label Email
+      %label.hfont Email
       %input{:type=>'text'}
-
+      %label.hfont Message
+      %textarea.hfont{:name => 'message', :rows => '5'}
+      %input.button.hfont{:type => "submit", :value => "SEND"}
       

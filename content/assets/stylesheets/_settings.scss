@@ -18,7 +18,7 @@
 $vicLogoMainColor: #e966a6;
 $vicLogoSecondaryColor: #9ad5c4;
 
-$mainColor: #2ba6cb;
+$mainColor: #89857e;
 $successColor: $vicLogoMainColor;
 // $alertColor: #c60f13;
 $secondaryColor: $vicLogoSecondaryColor;
@@ -69,8 +69,8 @@ $bodyFontFamily: Georgia, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-
 // $labelBtmMargin: 3px;
 // $inputFontColor: rgba(0,0,0,0.75);
 // $inputFontSize: 14px;
-// $inputBgColor: #fff;
-// $inputFocusBgColor: darken(#fff, 2%);
+$inputBgColor: rgba($vicLogoSecondaryColor, 0.3);
+$inputFocusBgColor: rgba($vicLogoSecondaryColor, 0.4);
 // $inputBorderColor: darken(#fff, 20%);
 // $inputFocusBorderColor: darken(#fff, 30%);
 // $inputBorderStyle: solid;

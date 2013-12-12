@@ -147,3 +147,14 @@ hr.zig {
 .nopad {
   padding: 0px !important;
 }
+
+.button {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.paddy {
+  display: block;
+  width: 100%;
+  padding: 7px 0;
+}
