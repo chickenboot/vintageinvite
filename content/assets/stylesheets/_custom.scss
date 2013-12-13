@@ -38,20 +38,34 @@
   height: 100px;
 }
 
-.pinking {
-  background: url(/assets/pinking.png) repeat-x;
+.pinking, .pinkinggrey {
   height: 4px;
   border: 0;
-  margin: 40px 0 0 0;
   width: 100%;
   padding: 0;
 }
 
+.pinking {
+  margin: 40px 0 0 0;
+  background: url(/assets/pinking.png) repeat-x;
+}
+
+.pinkinggrey {
+  margin: 20px 0 0 0;
+  background: url(/assets/pinkinggrey.png) repeat-x;
+}
+
+.greyblock {
+  background: #e7e7e5;
+  padding-top: 0;
+  margin-top: 0;
+  height: 100px;
+}
 .range {
-  height: 220px;
-  width: 220px;
+  height: 0;
+  width: 100%;
+  padding-bottom: 100%;
   text-align: center;
-  background: url(http://placehold.it/220x220);
   img {
     opacity: 0;
     filter: alpha(opacity=0);
@@ -60,29 +74,51 @@
 
 .domesticbliss {
   background: url(/assets/domesticblissmain220.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .cherries {
   background: url(/assets/cherrybombmain220.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .knitone {
   background: url(/assets/knitonemain220.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .hera {
   background: url(/assets/heramain220.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.rangerow {
+.rangerow, .product, .range-page {
   margin: 12px 0;
   display: block;
   h6 {
-    margin: 9px 0 9px 0;
+    margin: 9px 0 6px 0;
   }
   h5 {
 
   }
 }
 
+.range-page {
+  .sub {
+    font-family: $headerFontFamily;
+  }
+}
+
+.product {
+  .sub {
+    margin-bottom: 6px;
+  }
+}
 .sub {
-  color: #89857E;
+  font-family: $subFontFamily;
+  font-weight: $subFontWeight;
+  color: $subFontColor;
+  margin-bottom: 6px;
 }
 
 .logo {
@@ -157,4 +193,8 @@ hr.zig {
   display: block;
   width: 100%;
   padding: 7px 0;
+}
+
+.productrange {
+  margin-top: 6px;
 }
