@@ -46,7 +46,7 @@
 }
 
 .pinking {
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
   background: url(/assets/pinking.png) repeat-x;
 }
 
@@ -101,6 +101,15 @@
   h5 {
 
   }
+}
+
+h6.socialmedia {
+  margin-top: 0;
+}
+
+.socialmedia {
+  display: block;
+  padding: 0 0 6px 0;
 }
 
 .range-page {
