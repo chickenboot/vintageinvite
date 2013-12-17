@@ -1,6 +1,20 @@
 @import "settings";
 
-$featureColor: rgb(245, 247, 248);
+.banner {
+  height: 50px;
+  border: 0;
+  margin: 8px 0 8px 0;
+  width: 100%;
+  background: $vicLogoSecondaryColor;
+}
+
+.cover {
+  padding: 8px 0;
+}
+
+.italic {
+  font-style: italic;
+}
 
 .top-colour {
   height: 13px;
@@ -10,28 +24,141 @@ $featureColor: rgb(245, 247, 248);
   background: $vicLogoSecondaryColor;
 }
 
+.circle {
+  border-radius: 50%;
+}
+
+.square {
+}
+
+.footer {
+  background: $vicLogoSecondaryColor;
+  padding-top: 0;
+  margin-top: 0;
+  height: 100px;
+}
+
+.pinking, .pinkinggrey {
+  height: 4px;
+  border: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.pinking {
+  margin: 20px 0 0 0;
+  background: url(/assets/pinking.png) repeat-x;
+}
+
+.pinkinggrey {
+  margin: 20px 0 0 0;
+  background: url(/assets/pinkinggrey.png) repeat-x;
+}
+
+.greyblock {
+  background: #e7e7e5;
+  padding-top: 0;
+  margin-top: 0;
+  height: 100px;
+}
+.range {
+  height: 0;
+  width: 100%;
+  padding-bottom: 100%;
+  text-align: center;
+  img {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+.domesticbliss {
+  background: url(/assets/domesticblissmain220.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.cherries {
+  background: url(/assets/cherrybombmain220.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.knitone {
+  background: url(/assets/knitonemain220.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hera {
+  background: url(/assets/heramain220.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.rangerow, .product, .range-page {
+  margin: 12px 0;
+  display: block;
+  h6 {
+    margin: 9px 0 6px 0;
+  }
+  h5 {
+
+  }
+}
+
+h6.socialmedia {
+  margin-top: 0;
+}
+
+.socialmedia {
+  display: block;
+  padding: 0 0 6px 0;
+}
+
+.range-page {
+  .sub {
+    font-family: $headerFontFamily;
+  }
+}
+
+.product {
+  .sub {
+    margin-bottom: 6px;
+  }
+}
+.sub {
+  font-family: $subFontFamily;
+  font-weight: $subFontWeight;
+  color: $subFontColor;
+  margin-bottom: 6px;
+}
+
 .logo {
   padding: 36px 0 0 0;
   a img {
     max-height: 200px;
     @media screen and (min-width: $screenSmall) { max-width: 200px;}
   }
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .header {
   font-family: $mainHeadingFontFamily;
   font-weight: $mainHeadingFontWeight;
-  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.hfont {
+  font-family: $headerFontFamily;
+}
+
+.main-color {
+  color: $vicLogoMainColor;
 }
 
 #vic-topbar { 
   margin: 0;
-//min-height: 120px;
   width: 100%;
   .navigation {
     margin: 0; 
-    padding: 10px 0 8px 0;
+    padding: 0; //10px 0 8px 0;
     text-align: center;
     width: 100%;
     height: auto;
@@ -55,93 +182,28 @@ $featureColor: rgb(245, 247, 248);
   }
 }
 
-.blurb {
-  font-family: $blurbFontFamily;
-  font-weight: $blurbFontWeight;
-  letter-spacing: $blurbLetterSpacing;
-  color: $frontPageColor;
-  margin-bottom: 4px;
-}
-
-.coming-soon {
-  font-family: $mainHeadingFontFamily !important;
-  font-weight: $mainHeadingFontWeight !important;
-  color: $frontPageColor !important;
-  letter-spacing: 9px;
-}
-
-.fp-para {
-  letter-spacing: 2px;
-}
-
-.mailing-list {
-  margin: 8px 0;
-  //  input { margin: 0px !important; }
-}
-hr.wavy {
-  background: url(/assets/hr.png) repeat-x;
-  height: 8px;
-  border: 0px;
-}
 hr.zig {
   background: url(/assets/zig.png) repeat-x;
-  height: 8px;
+  height: 5px;
   border: 0px;
-  margin: 0;
+  margin: 6px 0 6px 0;
 }
-.nopadding {
+
+.nopad {
   padding: 0px !important;
 }
 
-.marketing-feature {
-  padding: 50px 0;
-  background: $featureColor;
-}
-.feature, .featurette {
-  padding: 100px 0;
-  img { padding: 10px 20px; }
-}
-
-.feature {
-  background: $featureColor;
-}
-
-footer {
-  h1, h2, h3, h4, h5, h6 {
-    line-height: 1;
-    margin: 0;
-    padding: 6px 8px;
-    display: inline-block;
-  }
-}
-
-.sm-button {
-  display: inline-block;
-  padding: 4px 8px;
-  font-size: ms(4);
-  a { color: $vicLogoSecondaryColor; }
-  &:hover, &.active, &:focus {
-    a, & { color: $vicLogoMainColor; }
-  }
-}
-
-.bold-links {
-  a { font-weight: bold; }
-}
-
-.temppad {
-  padding-top: 64px;
-}
-
-.temp-feature {
-  h1, h2, h3, h4, h5, h6 {
-    color: $vicLogoMainColor;
-    font-family: "Trebuchet MS", Helvetica, serif;
-  }
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
 .button {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
 
+.paddy {
+  display: block;
+  width: 100%;
+  padding: 7px 0;
+}
+
+.productrange {
+  margin-top: 6px;
 }

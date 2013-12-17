@@ -3,6 +3,7 @@ GEM
   specs:
     adsf (1.1.1)
       rack (>= 1.0.0)
+    builder (3.0.4)
     chunky_png (1.2.8)
     coderay (1.0.9)
     colored (1.2)
@@ -81,6 +82,7 @@ PLATFORMS
 
 DEPENDENCIES
   adsf
+  builder
   compass
   guard-nanoc
   haml

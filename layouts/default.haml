@@ -44,7 +44,8 @@
       %a{:href => "/"}
         %img{:src => "/assets/logo.svg", :title => "The Vintage Invite Company"}
   .row
-    %hr.zig
+    .twelve.columns
+      %hr.zig
   .row
     .twelve.columns
       %nav#vic-topbar
@@ -56,9 +57,13 @@
           - nav_li('contact')
           - nav_li('blog', nil,'http://blog.thevintageinvite.com')
   .row
-    %hr.zig
+    .twelve.columns
+      %hr.zig
   = yield
-
+  .row
+    .twelve.columns
+      .pinking &nbsp;
+      .footer &nbsp;
   %script{:src => "/assets/app.js" }
   - if item[:orbit]
     :javascript

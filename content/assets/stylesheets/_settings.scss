@@ -1,7 +1,8 @@
 @import "foundation/common/ratios";
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+//@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+//@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
 
 // Settings file containing Foundation defaults
 
@@ -17,12 +18,12 @@
 $vicLogoMainColor: #e966a6;
 $vicLogoSecondaryColor: #9ad5c4;
 
-$mainColor: #2ba6cb;
+$mainColor: #89857e;
 $successColor: $vicLogoMainColor;
 // $alertColor: #c60f13;
 $secondaryColor: $vicLogoSecondaryColor;
 // $txtColor: #222;
-// $highlightColor: #ffff99;
+$highlightColor: #ffff99;
 // $black: #000;
 $white: #fff;
 // $shinyEdge: rgba(#fff, .5);
@@ -30,19 +31,19 @@ $white: #fff;
 
 // Font Settings
 $frontPageColor: #999;
-$mainHeadingFontFamily: Montserrat, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$mainHeadingFontFamily: Lato, "Century Gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $mainHeadingFontWeight: normal;
 
-$blurbFontFamily: "Libre Baskerville", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$blurbFontWeight: normal;
-$blurbLetterSpacing: 3px;
+$subFontFamily: Georgia, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$subFontWeight: normal;
+$subFontColor: #89857E;
 
 // $fontSmoothing: antialiased;
-$headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $headerFontWeight: bold;
+$headerFontFamily: Lato, "Century Gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$headerFontWeight: normal;
 // $headerFontStyle: normal;
-// $headerFontColor: #222;
-$bodyFontFamily: Georgia, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$headerFontColor: $vicLogoMainColor;
+$bodyFontFamily: Lato, "Century Gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $bodyFontWeight: normal;
 // $bodyFontStyle: normal;
 // $bodyFontColor: $txtColor;
@@ -68,8 +69,8 @@ $bodyFontFamily: Georgia, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-
 // $labelBtmMargin: 3px;
 // $inputFontColor: rgba(0,0,0,0.75);
 // $inputFontSize: 14px;
-// $inputBgColor: #fff;
-// $inputFocusBgColor: darken(#fff, 2%);
+$inputBgColor: rgba($vicLogoSecondaryColor, 0.3);
+$inputFocusBgColor: rgba($vicLogoSecondaryColor, 0.4);
 // $inputBorderColor: darken(#fff, 20%);
 // $inputFocusBorderColor: darken(#fff, 30%);
 // $inputBorderStyle: solid;
