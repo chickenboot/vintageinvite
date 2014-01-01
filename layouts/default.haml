@@ -63,7 +63,16 @@
   .row
     .twelve.columns
       .pinking &nbsp;
-      .footer &nbsp;
+      .footer
+        - if item[:include_footer]
+          %p Want to make a splash with your wedding? Start as you mean to go on with a stylish announcement of your special day.
+          %p Using only the best creative designers and illustrators, we make unique invitation suites that can fit any wedding colour palette or individual taste.
+          %p Employing our love of fine print, we use only the finest techniques and materials on all of our jobs. We particularly love letterpress but also use foil blocking, embossing, papercraft and screen printing to name only a few. 
+          %p Our work screams quality and will make a deep impression on whoever holds it in their hands. 
+          %p Along with an extensive (and ever-growing) range of ‘off-the-peg’ designs we offer a fully bespoke service to meet any couple’s tastes and budget.
+          %p We decided put vintage flair back into these most important invitations; to your most special day and beginning of the rest of your life. 
+          %p Contact us to request a sample or discuss how we can help style your perfect day. 
+
   %script{:src => "/assets/app.js" }
   - if item[:orbit]
     :javascript

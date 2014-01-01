@@ -4,8 +4,8 @@ product_title: DOMESTIC BLISS
 product_blurb: Pingo pongo blappo jomes
 ---
 
-View all delivery options. Free shipping on orders $100+product detailsthis suite is fully customizable! 
+Join our cheeky characters Maggie and Charles as they skip off together on their journey into marriage.
 
-Read more... What's includedyour order includes complete personalization and printing by a small, dedicated staff.  
+This vintage design recalls the soap powder boxes of the 1950s: with bold 3D type and a gleaming blue sparkle, these invitations will ensure* marital and domestic bliss for years to come!
 
-Learn more about working with us. Read more... Available extrasthese items are available for an additional fee. Don’t see something you want? Just ask us! Read more... How to orderread more...
+Printed in three vibrant colours on luxurious cotton paper, these invitations will amaze your friends and family, and provide a stylish keepsake from your wedding day.
