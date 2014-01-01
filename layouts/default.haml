@@ -31,7 +31,7 @@
     </script>
 
   %title
-    The Vintage Invite Company -
+    The Vintage Invite Company - Letterpress Wedding Stationery -
     = item[:title]
   %link{:rel => "stylesheet", :href => "/assets/app.css" }
   %script{:src => "/assets/modernizr.foundation.js" }
@@ -65,13 +65,16 @@
       .pinking &nbsp;
       .footer
         - if item[:include_footer]
-          %p Want to make a splash with your wedding? Start as you mean to go on with a stylish announcement of your special day.
-          %p Using only the best creative designers and illustrators, we make unique invitation suites that can fit any wedding colour palette or individual taste.
-          %p Employing our love of fine print, we use only the finest techniques and materials on all of our jobs. We particularly love letterpress but also use foil blocking, embossing, papercraft and screen printing to name only a few. 
-          %p Our work screams quality and will make a deep impression on whoever holds it in their hands. 
-          %p Along with an extensive (and ever-growing) range of ‘off-the-peg’ designs we offer a fully bespoke service to meet any couple’s tastes and budget.
-          %p We decided put vintage flair back into these most important invitations; to your most special day and beginning of the rest of your life. 
-          %p Contact us to request a sample or discuss how we can help style your perfect day. 
+          .row
+            .six.columns
+              %p Want to make a splash with your wedding? Start as you mean to go on with a stylish announcement of your special day.
+              %p Using only the best creative designers and illustrators, we make unique invitation suites that can fit any wedding colour palette or individual taste.
+              %p Employing our love of fine print, we use only the finest techniques and materials on all of our jobs. We particularly love letterpress but also use foil blocking, embossing, papercraft and screen printing to name only a few.
+            .six.columns
+              %p Our work screams quality and will make a deep impression on whoever holds it in their hands. 
+              %p Along with an extensive (and ever-growing) range of 'off-the-peg' designs we offer a fully bespoke service to meet any couple's tastes and budget.
+              %p We decided put vintage flair back into these most important invitations; to your most special day and beginning of the rest of your life. 
+              %p Contact us to request a sample or discuss how we can help style your perfect day. 
 
   %script{:src => "/assets/app.js" }
   - if item[:orbit]

@@ -1,36 +1,30 @@
 @import "settings";
 
 .banner {
-  min-height: 50px;
+  height: 50px;
   border: 0;
   margin: 8px 0 8px 0;
   width: 100%;
   background: $vicLogoSecondaryColor;
-  color: #fff;
-  blockquote {
-    padding: 7px;
-    border-left: 0;
-    margin: 0;
-    font-size: 36px;
-    quotes: "\201C""\201D""\2018""\2019";
+  display: block;
+  .banner-text {
     color: #fff;
-    &:before {
-      position: absolute;
-      top: 0;
-      left: 0.5em;
-      content: open-quote;
-      font-size: 71px;
+    font-weight: bold;  
+    padding: 6px 12px 6px 16px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 34px;
+  }
+  .banner-button {
+    .button {
+      font-size: 16px;
+      color: #fff;
+      padding: 6px 16px;
     }
-    p {
-      padding-left: 1.2em;
-      font-size: inherit;
-      color: inherit;
-      margin: 0;
-    }
-    cite {
-      float: right;
-      color: inherit;
-    }
+    padding: 6px;
+    display: inline;
+    vertical-align: middle;
   }
 }
 
@@ -62,6 +56,12 @@
   padding: 4px 8px;
   margin-top: 0;
   min-height: 100px;
+  //column-count: 2;
+   // -moz-column-count: 2;
+   // -webkit-column-count: 2;
+   // column-gap: 10px;
+   // -moz-column-gap: 10px;
+   // -webkit-column-gap: 10px;
   p {
     color: $white;
     line-height: 1.3;
