@@ -28,6 +28,15 @@
   }
 }
 
+.subtitle {
+  width: 100%;
+  display: block;
+  h6 {
+    margin: 2px 0;
+    letter-spacing: 2px;
+    color: lighten($vicLogoMainColor, 25%);
+  }
+}
 .cover {
   padding: 8px 0;
 }
@@ -167,7 +176,7 @@ h6.socialmedia {
     max-height: 200px;
     @media screen and (min-width: $screenSmall) { max-width: 200px;}
   }
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .header {
