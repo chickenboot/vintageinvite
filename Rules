@@ -40,6 +40,13 @@ compile '/range/*/' do
   layout 'product'
 end
 
+compile '/assets/images/products/*/' do
+end
+
+compile '/assets/images/products/*/', :rep => :thumbnail do
+  filter :thumbnailize, :width => 220, :extension => 'jpg'
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -70,6 +77,14 @@ end
 route '/assets/javascripts/*' do
   filename = File.basename(item.identifier)
   '/assets/' + filename + '.js' if @config[:javascripts][:passthrough].include?(filename)
+end
+
+route '/assets/images/products/*' do
+  '/assets/products/' + File.basename(item.identifier) + '.' + item[:extension]
+end
+
+route '/assets/images/products/*', :rep => :thumbnail do
+  '/assets/products/' + File.basename(item.identifier) + '-220.jpg'
 end
 
 route '/assets/*' do
