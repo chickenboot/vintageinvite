@@ -44,7 +44,7 @@ compile '/assets/images/products/*/' do
 end
 
 compile '/assets/images/products/*/', :rep => :thumbnail do
-  filter :thumbnailize, :width => 220, :extension => 'jpg'
+  filter :thumbnailize, :width => 220
 end
 
 compile '*' do
@@ -84,7 +84,7 @@ route '/assets/images/products/*' do
 end
 
 route '/assets/images/products/*', :rep => :thumbnail do
-  '/assets/products/' + File.basename(item.identifier) + '-220.jpg'
+  '/assets/products/' + File.basename(item.identifier) + '-220.' + item[:extension]
 end
 
 route '/assets/*' do

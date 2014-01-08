@@ -2,6 +2,7 @@
 title: Cherry Bomb
 product_title: CHERRY BOMB
 product_blurb: Sex bomb sex bomb
+image_root: cherrybomb
 ---
 
 These cheeky cherries are beaming with happiness&ndash;they’ve found love atop a pile of delicious cream and are adding the sweet sprinkle of marriage.

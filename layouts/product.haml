@@ -2,7 +2,7 @@
   .product
     .row
       .six.columns
-        %img{:src => 'http://placehold.it/480x550/9ad5c4'}
+        %img{:src => "/assets/products/#{item[:image_root]}-invite.jpg"}
       .six.columns
         %h6= item[:product_title]
         .sub.italic= item[:product_blurb]
@@ -11,16 +11,16 @@
   .productrange
     .row
       .three.columns
-        %img{:src => 'http://placehold.it/220x220/e966a6/fff'}
+        %img{:src => "/assets/products/#{item[:image_root]}-std-220.jpg"}
         %h6.text-center SAVE THE DATE
       .three.columns
-        %img{:src => 'http://placehold.it/220x220/e966a6/fff'}
-        %h6.text-center RSVP
-      .three.columns
-        %img{:src => 'http://placehold.it/220x220/e966a6/fff'}
+        %img{:src => "/assets/products/#{item[:image_root]}-invite-220.jpg"}
         %h6.text-center MAIN INVITATION
       .three.columns
-        %img{:src => 'http://placehold.it/220x220/e966a6/fff'}
+        %img{:src => "/assets/products/#{item[:image_root]}-rsvp-220.jpg"}
+        %h6.text-center RSVP
+      .three.columns
+        %img{:src => "/assets/products/#{item[:image_root]}-place-220.jpg"}
         %h6.text-center PLACE SETTINGS
   .row
     .twelve.columns

@@ -2,6 +2,7 @@
 title: Knit One
 product_title: KNIT ONE
 product_blurb: Knit one, purl one, nip one, curl one
+image_root: knitone
 ---
 
 Knitted with the perfect partner? Keen to show off your crafty side? Our ‘knit-one’ suite is perfect for all creative, wool loving couples. 
