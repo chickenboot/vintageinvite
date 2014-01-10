@@ -3,6 +3,7 @@ title: Delightfully Dotty
 product_title: DELIGHTFULLY DOTTY
 product_blurb: Dot dot dot dot dash dash dash dot
 image_root: dotty
+orbit: product-orbit
 ---
 
 Looking for a way to couple your unique style with a more traditional layout? Want to show off the best retro stylings with a timeless typeface?

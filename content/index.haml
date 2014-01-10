@@ -1,20 +1,25 @@
 ---
 title: Home
 include_footer: true
+orbit: home-orbit
 ---
 .row
   .twelve.columns
-    .cover
-      %img{src: '/assets/amy_ben.jpg', width: '970px', height: '438px'}
+    #home-orbit
+      %img{src: '/assets/dom.jpg'}
+      %img{src: '/assets/amy_ben.jpg'}
 .row
   .twelve.columns
     .banner
-      %span.banner-text
-        GRAND OPENING OFFER: 20% OFF EVERYTHING!
-      %span.banner-button
-        %a.button.radius{href: '/range'} 
-          View Range
-          %i.icon-caret-right &nbsp;
+      .row
+        .ten.columns.mobile-three
+          %span.banner-text.text-center
+            %span.hide-for-small GRAND OPENING OFFER: 
+            20% DISCOUNT!
+        .two.columns.mobile-one.banner-button
+          %a.button.radius{href: '/range'} 
+            Range
+            %i.icon-caret-right &nbsp;
 .rangerow
   .row
     .six.columns
