@@ -31,6 +31,9 @@
   }
 }
 
+.media-icon {
+  width: 45px;
+}
 .product-large {
   @media only screen and (max-width: $screenSmall) {
     text-align: center;
