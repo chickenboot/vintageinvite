@@ -10,7 +10,7 @@
   .banner-text {
     color: #fff;
     font-weight: bold;  
-    padding: 6px 12px 6px 16px;
+    padding: 6px 12px 6px 25px;
     margin: 0;
     display: inline-block;
     vertical-align: middle;
@@ -28,6 +28,28 @@
     padding: 6px;
     display: inline;
     vertical-align: middle;
+  }
+  &:before,&:after
+  {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    top: 8px;
+  }
+  &:after
+  {
+    right: 15px;
+    border-right: 17px solid white;    
+    border-left: 17px solid transparent;
+  }
+  &:before
+  {
+    left: 15px;
+    border-left: 17px solid white;
+    border-right: 17px solid transparent;
   }
 }
 
