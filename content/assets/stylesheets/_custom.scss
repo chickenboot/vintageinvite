@@ -133,7 +133,7 @@
   border-left:15px solid transparent; 
 }
 
-.contact {
+.contact, .about {
   padding-top: 12px;
   h6 {
     letter-spacing: 1.0px;
@@ -152,6 +152,22 @@
     .contact-item {
       display: block;
       padding: 0 0 6px 0;  
+    }
+  }
+}
+
+.panel {
+  background: $vicPalePink;
+  border: none;
+  h6 {
+    letter-spacing: 1.0px;
+    margin-top: 0;
+    a {
+      font-weight: bold;
+      color: $vicLogoMainColor;
+      &:hover, &:active, &:visited {
+        color: lighten($vicLogoMainColor, 5%);
+      }
     }
   }
 }
