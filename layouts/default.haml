@@ -45,10 +45,6 @@
         %img{:src => "/assets/logo.svg", :title => "The Vintage Invite Company"}
   .row
     .twelve.columns
-      .subtitle
-        %h6.text-center BESPOKE VINTAGE LETTERPRESS WEDDING STATIONERY
-  .row
-    .twelve.columns
       %hr.zig
   .row
     .twelve.columns
@@ -65,31 +61,50 @@
       %hr.zig
   = yield
   .row
-    .four.columns
-      %a{:href => 'http://twitter.com/vintageinvite'}
-        %img.media-icon{:src => '/assets/twtr.png'}
-      %a{:href => 'http://facebook.com/vintageinviteco'}
-        %img.media-icon{:src => '/assets/fb.png'}
-      %a{:href => 'http://www.pinterest.com/vintageinvite'}
-        %img.media-icon{:src => '/assets/pin.png'}
-    .eight.columns
-      &nbsp;
+    .twelve.columns
+      %hr.zig
+  .row
+    .bottom-break
+      .six.columns
+        .break-text Stay in the loop! Subscribe to our mailing list
+      .six.columns
+        %form.mailing-list.text-center.validate{:action=>"http://thevintageinvite.us7.list-manage1.com/subscribe/post?u=14f010ba1169be1d21a9a1656&amp;id=c50b20307c", :method=>"post", :id=>"mc-embedded-subscribe-form", :name=>"mc-embedded-subscribe-form", :target=>"_blank"}
+        .row.collapse
+          .nine.mobile-three.columns
+            %input.email{:type=>"email", :value=>"", :name=>"EMAIL", :id=>"mce-EMAIL", :placeholder=>"Email Address"}
+          .three.mobile-one.columns
+            %input.button.success.expand.postfix{:type=>"submit", :value=>"SUBSCRIBE", :name=>"subscribe", :id=>"mc-embedded-subscribe"}
   .row
     .twelve.columns
-      .pinking &nbsp;
+      .pinking-twotone &nbsp;
       .footer
-        - if item[:include_footer]
-          .row
-            .six.columns
-              %p Want to make a splash with your wedding? Start as you mean to go on with a stylish announcement of your special day.
-              %p Using only the best creative designers and illustrators, we make unique invitation suites that can fit any wedding colour palette or individual taste.
-              %p Employing our love of fine print, we use only the finest techniques and materials on all of our jobs. We particularly love letterpress but also use foil blocking, embossing, papercraft and screen printing to name only a few.
-            .six.columns
-              %p Our work screams quality and will make a deep impression on whoever holds it in their hands. 
-              %p Along with an extensive (and ever-growing) range of 'off-the-peg' designs we offer a fully bespoke service to meet any couple's tastes and budget.
-              %p We decided put vintage flair back into these most important invitations; to your most special day and beginning of the rest of your life. 
-              %p Contact us to request a sample or discuss how we can help style your perfect day. 
-
+        .row
+          .three.columns.mobile-two
+            %h6 Contact Us
+            %ul
+              %li 
+                %a{:href => 'mailto:info@thevintageinvite.com'} info@thevintageinvite.com
+              %li 07XXX XXXXXX
+          .three.columns.mobile-two
+            %h6 How to Order
+            %ul
+              %li Bespoke Process
+              %li TXAEERP
+          .three.columns.mobile-two
+            %h6 The Small Print
+            %ul
+              %li Terms &amp; Conditions
+              %li Price List 2014
+          .three.columns.mobile-two
+            %h6 Follow Us
+            %ul
+              %li       
+                %a{:href => 'http://twitter.com/vintageinvite'}
+                  %img.media-icon{:src => '/assets/twtr.png'}
+                %a{:href => 'http://facebook.com/vintageinviteco'}
+                  %img.media-icon{:src => '/assets/fb.png'}
+                %a{:href => 'http://www.pinterest.com/vintageinvite'}
+                  %img.media-icon{:src => '/assets/pin.png'}
   %script{:src => "/assets/app.js" }
   - if item[:orbit]
     :javascript

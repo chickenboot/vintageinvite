@@ -1,0 +1,40 @@
+@import "settings";
+
+// the colour of the solid bar stuck to the top of the window
+.top-colour {
+  height: 13px;
+  position: absolute;
+  width: 100%;
+  border: 0px;
+  background: $vicLogoSecondaryColor;
+}
+
+// the navigation bar
+#vic-topbar { 
+  margin: 0;
+  width: 100%;
+  .navigation {
+    margin: 0; 
+    padding: 0; //10px 0 8px 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  ul { 
+    list-style: none; 
+    li { 
+      display: inline-block;    
+      margin: 0 0px; padding: 0 27px;
+      @media screen and (max-width: $screenSmall - 1) {
+        display: block;
+        width: 100% !important;
+        padding: 5px 0;
+      }
+    
+      a { color: $vicDarkGrey; }
+      &:hover, &.active, &:focus {
+        a, & { color: $vicLogoMainColor; }
+      }
+    }
+  }
+}

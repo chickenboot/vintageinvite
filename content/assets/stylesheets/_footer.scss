@@ -1,0 +1,47 @@
+@import "settings";
+
+.footer {
+  background: $vicLightSecondary;
+  padding: 4px 0px 4px 20px;
+  margin-top: 0;
+  min-height: 100px;
+  h6 {
+    color: $vicFooterGreen;
+    font-weight: bold;
+  }
+  ul {
+    list-style: none;
+    color: $vicFooterGreen;
+    li {
+      font-size: 12px;
+    }
+  }
+  //column-count: 2;
+   // -moz-column-count: 2;
+   // -webkit-column-count: 2;
+   // column-gap: 10px;
+   // -moz-column-gap: 10px;
+   // -webkit-column-gap: 10px;
+}
+
+.bottom-break {
+  .break-text {
+    text-align: right;
+    @media screen and (max-width: $screenSmall - 1) {
+      text-align: center;
+      padding: 2px 0px 16px 0px;
+    }
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 16px;
+    color: $vicLogoMainColor;
+  }
+  margin-top: 9px;
+  input {
+    margin: 0;
+    background-color: $white;
+  }
+  form {
+    margin: 0;
+  }
+}
