@@ -31,7 +31,7 @@
         padding: 5px 0;
       }
     
-      a { color: $vicDarkGrey; }
+      a { color: $vicLogoSecondaryColor; }
       &:hover, &.active, &:focus {
         a, & { color: $vicLogoMainColor; }
       }

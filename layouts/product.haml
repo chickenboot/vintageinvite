@@ -17,9 +17,9 @@
           %span.orbit-caption#caption-std
             %p Save the Date &ndash; 147mm x 147mm on 250gsm woven stock
       .six.columns
-        %h6= item[:product_title]
-        .sub.italic= item[:product_blurb]
-        .paddy &nbsp;
+        .product-title
+          %h6= item[:product_title]
+          .sub.italic= item[:product_blurb]
         = yield
   .productrange
     .row

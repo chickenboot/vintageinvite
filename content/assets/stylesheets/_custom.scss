@@ -11,7 +11,14 @@
   display: inline-block;
   vertical-align: middle;
   font-size: 19px;
-  letter-spacing: 0.75px; 
+  letter-spacing: 0.75px;
+  a, a:visited {
+    color: #fff;
+    font-weight: bold;
+    &:hover, &:active {
+      color: $vicLogoMainColor;
+    }
+  }
 }
 
 .media-icon {
@@ -191,7 +198,7 @@
 }
 
 .logo {
-  padding: 36px 0 0 0;
+  padding: 24px 0 12px 0;
   a img {
     max-height: 200px;
     @media screen and (min-width: $screenSmall) { max-width: 200px;}

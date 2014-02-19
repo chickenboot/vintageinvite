@@ -1,0 +1,28 @@
+@import "settings";
+
+.product-title {
+  background: $productTitleColor;
+  height: 60px;
+  h6, .sub {
+    color: $white;
+    margin: 0;
+  }
+  .sub {
+    padding-top: 6px;
+  }
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  &:after
+  {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    top: -9.5px;
+    right: 10px;
+    border-right: 30px solid white;    
+    border-left: 30px solid transparent;
+  }
+}
