@@ -1,49 +1,53 @@
-= render 'default', :orbit => 'product-orbit' do
+= render 'default' do
   .product
     .row
       .six.columns
         .product-large
-          #product-orbit
-            %img{:src => "/assets/products/#{item[:image_root]}-invite.jpg", :data => { :caption => '#caption-invite'}}
-            %img{:src => "/assets/products/#{item[:image_root]}-rsvp.jpg", :data => { :caption => '#caption-rsvp'}}
-            %img{:src => "/assets/products/#{item[:image_root]}-place.jpg", :data => { :caption => '#caption-place'}}
-            %img{:src => "/assets/products/#{item[:image_root]}-std.jpg", :data => { :caption => '#caption-std'}}
-          %span.orbit-caption#caption-invite
-            %p Main Invitation &ndash; A5 on 428gsm cotton stock
-          %span.orbit-caption#caption-rsvp
-            %p RSVP &ndash; 147mm x 147mm on 250gsm woven stock
-          %span.orbit-caption#caption-place
-            %p Place Cards &ndash; a bit smaller, on 250gsm woven stock
-          %span.orbit-caption#caption-std
-            %p Save the Date &ndash; 147mm x 147mm on 250gsm woven stock
+          %img{:src => "/assets/products/#{item[:image_root]}-invite.jpg", :id => 'main-image'}          
       .six.columns
         .product-title
           %h6= item[:product_title]
           .sub.italic= item[:product_blurb]
         = yield
+        .panel 
+          %h6
+            Ready to order?
+            %a{href: "mailto:hello@thevintageinvite.com?subject=Wedding Stationery - #{item[:product_title]}"} Send us an enquiry
+            or see <a href='/order'>how to order</a>.
   .productrange
     .row
       .three.columns.mobile-two
-        %img{:src => "/assets/products/#{item[:image_root]}-std-220.jpg"}
+        %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{item[:image_root]}-std.jpg"}}
+          %img{:src => "/assets/products/#{item[:image_root]}-std-220.jpg"}
         %h6.text-center SAVE THE DATE
       .three.columns.mobile-two
-        %img{:src => "/assets/products/#{item[:image_root]}-invite-220.jpg"}
+        %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{item[:image_root]}-invite.jpg"}}
+          %img{:src => "/assets/products/#{item[:image_root]}-invite-220.jpg"}
         %h6.text-center MAIN INVITATION
       .three.columns.mobile-two
-        %img{:src => "/assets/products/#{item[:image_root]}-rsvp-220.jpg"}
+        %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{item[:image_root]}-rsvp.jpg"}}
+          %img{:src => "/assets/products/#{item[:image_root]}-rsvp-220.jpg"}
         %h6.text-center RSVP
       .three.columns.mobile-two
-        %img{:src => "/assets/products/#{item[:image_root]}-place-220.jpg"}
+        %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{item[:image_root]}-place.jpg"}}
+          %img{:src => "/assets/products/#{item[:image_root]}-place-220.jpg"}
         %h6.text-center PLACE SETTINGS
   .row
     .twelve.columns
-      .pinkinggrey &nbsp;
+      .pinking-darkgrey &nbsp;
+      .darkgrey-header
+        %h6 HOW TO ORDER
       .greyblock
-        %p
-          View our price list here.
-        %p
-          All of our stationery is fully customisable; included in the price is customising the colour scheme and all of the information, but we’re more than happy to discuss any further alterations to the design if you have any ideas of your own. 
-        %p
-          We also supply orders of service, information cards, seating plans and thank you cards for all of our ranges, just drop us a note if you are interested! 
-        %p
-          Invitation and RSVP orders include a full set of matching envelopes in a variety of finishes to suit your tastes.
+        .row
+          .three.columns.mobile-two
+            %h6 STEP 1
+            %p Instead of ass say buns, like kiss my buns or you're a bunshole
+          .three.columns.mobile-two
+            %h6 STEP 2
+            %p Instead of shit say poo, like bullpoo poopoo or this poo is cold
+          .three.columns.mobile-two
+            %h6 STEP 3
+            %p With bitch drop the T because bich is latin for generosity
+          .three.columns.mobile-two
+            %h6 STEP 4
+            %p Don't say fuck anymore because fuck is the worst word that you can say

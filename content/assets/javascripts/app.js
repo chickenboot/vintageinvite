@@ -7,11 +7,17 @@ $('[data-orbit]').on('orbit:after-slide-change', function(e, orbit_info) {
 });
 
 $(document).ready(function () {
-    $(document).foundationTopBar();
+  $(document).foundationTopBar();
 });
 
-if (!Modernizr.svg) {
-  $('img[src*="svg"]').attr('src', function() {
-    return $(this).attr('src').replace('.svg', '.png');
+$(function() {
+  $("a[data-set-image]").on("click", function() {
+    $('#' + $(this).data("set-image")).attr('src', $(this).data('set-image-src'));
   });
-}
+
+  if (!Modernizr.svg) {
+    $('img[src*="svg"]').attr('src', function() {
+      return $(this).attr('src').replace('.svg', '.png');
+    });
+  }
+});

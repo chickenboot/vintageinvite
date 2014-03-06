@@ -11,6 +11,7 @@
 @import "product";
 
 @import "font-awesome";
+@import "jquery.jqzoom";
 
 .orbit-wrapper {
   .slider-nav span { @include opacity(0); @include single-transition(opacity, 400ms); }

@@ -27,7 +27,7 @@ end
 
 compile '/assets/javascripts/*' do
   filter :erb
-  filter :uglify_js if @config[:javascripts][:passthrough].include?(File.basename(item.identifier))
+  #filter :uglify_js if @config[:javascripts][:passthrough].include?(File.basename(item.identifier))
 end
 
 compile '/blog/posts/*' do
