@@ -139,6 +139,19 @@
   .sidebar, .contact-form {
     padding: 12px 0 0 0;
   }
+  .how-to-order {
+    h6 {
+      margin: 6px 0 7px 0;
+    }
+    .sub {
+      margin-bottom: 20px;
+    }
+    ol {
+      li {
+        margin: 18px 0 0 0;
+      }
+    }
+  }
   .sidebar {
     min-height: 480px;
     padding-left: 12px;
@@ -150,6 +163,16 @@
       display: block;
       padding: 0 0 6px 0;  
     }
+  }
+}
+
+.order {
+  .sidebar, .how-to-order {
+    padding-top: 12px;
+  }
+
+  .sidebar {
+    padding-left: 12px;
   }
 }
 
