@@ -44,15 +44,15 @@ compile '/assets/images/products/*/' do
 end
 
 compile '/assets/images/products/*/', :rep => :thumbnail do
-  filter :thumbnailize, :width => 220
+  filter :thumbnailize, :width => 220, :density => 90
 end
 
 compile '/assets/images/products/*/', :rep => :medium do
-  filter :thumbnailize, :width => 420
+  filter :thumbnailize, :width => 420, :density => 90
 end
 
 compile '/assets/images/products/*/', :rep => :large do
-  filter :thumbnailize, :width => 1000
+  filter :thumbnailize, :width => 1000, :density => 90
 end
 
 compile '*' do

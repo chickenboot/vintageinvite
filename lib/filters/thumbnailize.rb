@@ -9,6 +9,8 @@ class Thumbnailize < Nanoc::Filter
       'convert',
       '-resize',
       params[:width].to_s,
+      '-density',
+      params[:density].to_s,
       filename,
       dest_file
     )
