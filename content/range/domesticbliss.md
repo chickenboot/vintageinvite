@@ -2,7 +2,11 @@
 title: Domestic Bliss
 product_title: DOMESTIC BLISS
 product_blurb: Pingo pongo blappo jomes
-image_root: domesticbliss
+images: 
+  domesticbliss-std: 'SAVE THE DATE'
+  domesticbliss-invite: 'MAIN INVITE'
+  domesticbliss-rsvp: 'RSVP'
+  domesticbliss-place: 'PLACE CARDS'
 orbit: product-orbit
 ---
 

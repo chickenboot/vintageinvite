@@ -24,7 +24,7 @@
     list-style: none; 
     li { 
       display: inline-block;    
-      margin: 0 0px; padding: 0 27px;
+      margin: 0 0px; padding: 0 23px;
       @media screen and (max-width: $screenSmall - 1) {
         display: block;
         width: 100% !important;

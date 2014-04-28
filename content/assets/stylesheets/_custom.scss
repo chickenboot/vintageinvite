@@ -130,14 +130,17 @@
   border-left:15px solid transparent; 
 }
 
-.contact, .about, .order {
-  padding-top: 12px;
+.contact, .about, .order, .bespoke {
+  padding-top: 8px;
   h6 {
     letter-spacing: 1.0px;
-    margin-top: 0;
+    margin-top: 4px;
   }
   .sidebar, .contact-form {
     padding: 12px 0 0 0;
+    form input[type="text"], form textarea {
+      border: none;
+    }
   }
   .how-to-order {
     h6 {
@@ -153,7 +156,13 @@
     }
   }
   .sidebar {
-    min-height: 480px;
+    h6 {
+      margin-top: 0;
+    }
+    @media screen and (min-width: $screenSmall) {
+      min-height: 480px;
+    } 
+    padding-right: 12px;
     padding-left: 12px;
     background: $vicPalePink;
     ul {
@@ -164,6 +173,7 @@
       padding: 0 0 6px 0;  
     }
   }
+
 }
 
 .order {
@@ -172,7 +182,12 @@
   }
 
   .sidebar {
+    @media screen and (min-width: $screenSmall) {
+      min-height: 880px;
+    } 
+  
     padding-left: 12px;
+    height: 100%;
   }
 }
 
@@ -219,7 +234,7 @@
   margin-bottom: 8px;
 }
 
-.header {
+.header, .banner {
   font-family: $mainHeadingFontFamily;
   font-weight: $mainHeadingFontWeight;
   letter-spacing: 2px;

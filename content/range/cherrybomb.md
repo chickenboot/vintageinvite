@@ -2,7 +2,11 @@
 title: Cherry Bomb
 product_title: CHERRY BOMB
 product_blurb: Sex bomb sex bomb
-image_root: cherrybomb
+images: 
+  cherrybomb-std: 'SAVE THE DATE'
+  cherrybomb-invite: 'MAIN INVITE'
+  cherrybomb-rsvp: 'RSVP'
+  cherrybomb-place: 'PLACE CARDS'
 orbit: product-orbit
 ---
 

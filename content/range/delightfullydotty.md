@@ -2,7 +2,11 @@
 title: Delightfully Dotty
 product_title: DELIGHTFULLY DOTTY
 product_blurb: Dot dot dot dot dash dash dash dot
-image_root: dotty
+images: 
+  dotty-std: 'SAVE THE DATE'
+  dotty-invite: 'MAIN INVITE'
+  dotty-rsvp: 'RSVP'
+  dotty-place: 'PLACE CARDS'
 orbit: product-orbit
 ---
 

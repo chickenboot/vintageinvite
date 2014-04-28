@@ -37,7 +37,7 @@ end
 
 compile '/range/*/' do
   filter :kramdown
-  layout 'product'
+  layout item[:layout] || 'product'
 end
 
 compile '/assets/images/products/*/' do
@@ -45,6 +45,14 @@ end
 
 compile '/assets/images/products/*/', :rep => :thumbnail do
   filter :thumbnailize, :width => 220
+end
+
+compile '/assets/images/products/*/', :rep => :medium do
+  filter :thumbnailize, :width => 420
+end
+
+compile '/assets/images/products/*/', :rep => :large do
+  filter :thumbnailize, :width => 1000
 end
 
 compile '*' do
@@ -80,11 +88,18 @@ route '/assets/javascripts/*' do
 end
 
 route '/assets/images/products/*' do
-  '/assets/products/' + File.basename(item.identifier) + '.' + item[:extension]
 end
 
 route '/assets/images/products/*', :rep => :thumbnail do
   '/assets/products/' + File.basename(item.identifier) + '-220.' + item[:extension]
+end
+
+route '/assets/images/products/*', :rep => :medium do
+  '/assets/products/' + File.basename(item.identifier) + '-medium.' + item[:extension]
+end
+
+route '/assets/images/products/*', :rep => :large do
+  '/assets/products/' + File.basename(item.identifier) + '-large.' + item[:extension]
 end
 
 route '/assets/*' do

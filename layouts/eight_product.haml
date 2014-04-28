@@ -1,0 +1,43 @@
+= render 'default' do
+  .product
+    .row
+      .six.columns
+        .product-large
+          %img.zoomy#main-image{:src => "/assets/products/#{item[:images].to_a[1][0]}-medium.jpg", :data => {:zoom_image => "/assets/products/#{item[:images].to_a[1][0]}-large.jpg"}}
+      .six.columns
+        .product-title
+          %h6= item[:product_title]
+          .sub.italic= item[:product_blurb]
+        = yield
+        .panel 
+          %h6
+            Ready to order?
+            %a{href: "mailto:hello@thevintageinvite.com?subject=Wedding Stationery - #{item[:product_title]}"} Send us an enquiry
+            or see <a href='/order'>how to order</a>.
+  .productrange
+    - item[:images].each_slice(4) do |fours|
+      .row
+        - fours.each do |k,v|
+          .three.columns.mobile-two
+            %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{k}-medium.jpg"}}
+              %img{:src => "/assets/products/#{k}-220.jpg"}
+            %h6.text-center= v
+  .row
+    .twelve.columns
+      .pinking-darkgrey &nbsp;
+      .darkgrey-header
+        %h6 HOW TO ORDER
+      .greyblock
+        .row
+          .three.columns.mobile-two
+            %h6 STEP 1
+            %p Instead of ass say buns, like kiss my buns or you're a bunshole
+          .three.columns.mobile-two
+            %h6 STEP 2
+            %p Instead of shit say poo, like bullpoo poopoo or this poo is cold
+          .three.columns.mobile-two
+            %h6 STEP 3
+            %p With bitch drop the T because bich is latin for generosity
+          .three.columns.mobile-two
+            %h6 STEP 4
+            %p Don't say fuck anymore because fuck is the worst word that you can say

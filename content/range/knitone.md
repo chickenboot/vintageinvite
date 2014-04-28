@@ -2,7 +2,11 @@
 title: Knit One
 product_title: KNIT ONE
 product_blurb: Knit one, purl one, nip one, curl one
-image_root: knitone
+images: 
+  knitone-std: 'SAVE THE DATE'
+  knitone-invite: 'MAIN INVITE'
+  knitone-rsvp: 'RSVP'
+  knitone-place: 'PLACE CARDS'
 orbit: product-orbit
 ---
 

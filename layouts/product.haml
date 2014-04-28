@@ -1,11 +1,13 @@
+- main_index = item[:images].length > 1 ? 1 : 0
+- class_suffix = item[:in_development] ? "-development" : ""
 = render 'default' do
   .product
     .row
       .six.columns
         .product-large
-          %img{:src => "/assets/products/#{item[:image_root]}-invite.jpg", :id => 'main-image'}          
+          %img.zoomy#main-image{:src => "/assets/products/#{item[:images].to_a[main_index][0]}-medium.jpg", :data => {:zoom_image => "/assets/products/#{item[:images].to_a[main_index][0]}-large.jpg"}}
       .six.columns
-        .product-title
+        %div{:class => "product-title#{class_suffix}"}
           %h6= item[:product_title]
           .sub.italic= item[:product_blurb]
         = yield
@@ -15,23 +17,13 @@
             %a{href: "mailto:hello@thevintageinvite.com?subject=Wedding Stationery - #{item[:product_title]}"} Send us an enquiry
             or see <a href='/order'>how to order</a>.
   .productrange
-    .row
-      .three.columns.mobile-two
-        %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{item[:image_root]}-std.jpg"}}
-          %img{:src => "/assets/products/#{item[:image_root]}-std-220.jpg"}
-        %h6.text-center SAVE THE DATE
-      .three.columns.mobile-two
-        %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{item[:image_root]}-invite.jpg"}}
-          %img{:src => "/assets/products/#{item[:image_root]}-invite-220.jpg"}
-        %h6.text-center MAIN INVITATION
-      .three.columns.mobile-two
-        %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{item[:image_root]}-rsvp.jpg"}}
-          %img{:src => "/assets/products/#{item[:image_root]}-rsvp-220.jpg"}
-        %h6.text-center RSVP
-      .three.columns.mobile-two
-        %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{item[:image_root]}-place.jpg"}}
-          %img{:src => "/assets/products/#{item[:image_root]}-place-220.jpg"}
-        %h6.text-center PLACE SETTINGS
+    - item[:images].each_slice(4) do |fours|
+      .row
+        - fours.each do |k,v|
+          .three.columns.mobile-two
+            %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{k}-medium.jpg"}}
+              %img{:src => "/assets/products/#{k}-220.jpg"}
+            %h6.text-center= v
   .row
     .twelve.columns
       .pinking-darkgrey &nbsp;
