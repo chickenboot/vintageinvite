@@ -1,0 +1,26 @@
+:ruby
+  def category(s, title=nil, href=nil)
+    href ||= "/#{s}/"
+    if item.identifier == href
+      haml_tag('li', "→ #{title || s.upcase}", :class => 'active')
+    else
+      haml_tag('li') do
+        haml_tag('a', title || s.upcase, :href => href, :class => 'notactive')
+      end
+    end
+  end
+
+= render 'default' do
+  .row
+    .order
+      .three.columns.mobile-four
+        .sidebar
+          %h6 CATEGORIES
+          %ul
+            - category('order', 'How to Order')
+            - category('faqs', 'FAQs')
+            - category('terms', 'Terms &amp; Conditions')
+            - category('prices', 'Price List 2014')
+      .nine.columns
+        = yield
+    

@@ -73,7 +73,7 @@ compile '*' do
     else
       raise "Filter is not configured for #{item.identifier} in Rules file."
     end
-    layout 'default'
+    layout item[:layout] || 'default'
   end
 end
 

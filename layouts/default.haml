@@ -1,7 +1,7 @@
 :ruby
   def nav_li(s, title=nil, href=nil)
     href ||= "/#{s}/"
-    if item.identifier == href
+    if item.identifier == href || (s == 'order' && item.identifier =~ /^\/terms|faqs|prices\/$/)
       haml_tag('li', title || s.upcase, :class => 'active header')
     else
       haml_tag('li') do
@@ -52,7 +52,7 @@
           - nav_li('', 'HOME', '/')
           - nav_li('range', 'PRODUCTS')
           - nav_li('bespoke')
-          - nav_li('order')
+          - nav_li('order', 'ORDERING')
           - nav_li('contact')
           - nav_li('about', 'ABOUT US')
           - nav_li('blog', nil,'http://blog.thevintageinvite.com')

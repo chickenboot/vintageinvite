@@ -142,7 +142,7 @@
       border: none;
     }
   }
-  .how-to-order {
+  .how-to-order, .terms, .faqs, .prices {
     h6 {
       margin: 6px 0 7px 0;
     }
@@ -167,6 +167,9 @@
     background: $vicPalePink;
     ul {
       list-style: none;
+      li.active {
+        font-weight: bold;
+      }
     }
     .contact-item {
       display: block;
@@ -176,9 +179,24 @@
 
 }
 
+.faq {
+  padding: 8px 0;
+  .question {
+    padding: 4px 0; 
+    font-weight: bold;
+  }
+  line-height: 1.6;
+}
+
 .order {
-  .sidebar, .how-to-order {
+  .sidebar, .how-to-order, .terms, .faqs, .prices {
     padding-top: 12px;
+    a {
+      font-weight: bold;
+      &:hover, &:active, &:visited {
+        text-decoration: underline;
+      }
+    }
   }
 
   .sidebar {
@@ -203,6 +221,16 @@
       &:hover, &:active, &:visited {
         color: lighten($vicLogoMainColor, 5%);
       }
+    }
+  }
+}
+
+.terms {
+  ul {
+    list-style: none;
+    li {
+      padding: 12px 0;
+      border-top: 1px solid lighten($txtColor, 40%);
     }
   }
 }
