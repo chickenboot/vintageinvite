@@ -179,11 +179,15 @@
 
 }
 
-.faq {
+.faq, .how-to-order {
   padding: 8px 0;
-  .question {
+  .question, .order-title {
     padding: 4px 0; 
     font-weight: bold;
+  }
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
   }
   line-height: 1.6;
 }

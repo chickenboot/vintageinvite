@@ -70,9 +70,9 @@
       .six.columns
         %form.mailing-list.text-center.validate{:action=>"http://thevintageinvite.us7.list-manage1.com/subscribe/post?u=14f010ba1169be1d21a9a1656&amp;id=c50b20307c", :method=>"post", :id=>"mc-embedded-subscribe-form", :name=>"mc-embedded-subscribe-form", :target=>"_blank"}
         .row.collapse
-          .nine.mobile-three.columns
+          .eight.mobile-three.columns
             %input.email{:type=>"email", :value=>"", :name=>"EMAIL", :id=>"mce-EMAIL", :placeholder=>"Email Address"}
-          .three.mobile-one.columns
+          .four.mobile-one.columns
             %input.button.success.expand.postfix{:type=>"submit", :value=>"SUBSCRIBE", :name=>"subscribe", :id=>"mc-embedded-subscribe"}
   .row
     .twelve.columns
@@ -112,7 +112,7 @@
   - if item[:orbit]
     :javascript
       $(window).load(function() {
-        $("##{item[:orbit]}").orbit({ animation: 'fade', timer: false, bullets: false});
+        $("##{item[:orbit]}").orbit({ animation: 'horizontal-push', timer: true, advanceSpeed: 4000, bullets: false});
       });
 /%footer
 /.twelve.columns.text-center
