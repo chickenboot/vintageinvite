@@ -4,3 +4,14 @@
   width: 100%;
   padding: 0;
 }
+
+@mixin bold-links($color: inherit, $hover-color: inherit, $hover-decoration: underline) {
+  a, a:visited {
+    font-weight: bold;
+    color: $color;
+    &:hover, &:active {
+      text-decoration: $hover-decoration;
+      color: $hover-color;
+    }
+  }
+}

@@ -13,13 +13,7 @@
   vertical-align: middle;
   font-size: 19px;
   letter-spacing: 0.75px;
-  a, a:visited {
-    color: #fff;
-    font-weight: bold;
-    &:hover, &:active {
-      color: $vicLogoMainColor;
-    }
-  }
+  @include bold-links(#fff,$vicLogoMainColor);
 }
 
 .media-icon {
@@ -129,9 +123,10 @@
   border-right: 15px solid $vicLogoSecondaryColor; 
   border-left:15px solid transparent; 
 }
-
+  
 .contact, .about, .order, .bespoke {
   padding-top: 8px;
+  @include bold-links;
   h6 {
     letter-spacing: 1.0px;
     margin-top: 4px;
@@ -195,12 +190,6 @@
 .order {
   .sidebar, .how-to-order, .terms, .faqs, .prices {
     padding-top: 12px;
-    a {
-      font-weight: bold;
-      &:hover, &:active, &:visited {
-        text-decoration: underline;
-      }
-    }
   }
 
   .sidebar {
@@ -219,13 +208,7 @@
   h6 {
     letter-spacing: 1.0px;
     margin-top: 0;
-    a {
-      font-weight: bold;
-      color: $vicLogoMainColor;
-      &:hover, &:active, &:visited {
-        color: lighten($vicLogoMainColor, 5%);
-      }
-    }
+    @include bold-links($vicLogoMainColor, lighten($vicLogoMainColor, 5%));
   }
 }
 
@@ -266,10 +249,13 @@
   margin-bottom: 8px;
 }
 
-.header, .banner {
+@mixin header-type {
   font-family: $mainHeadingFontFamily;
   font-weight: $mainHeadingFontWeight;
   letter-spacing: 2px;
+}
+.header, .banner {
+  @include header-type;
 }
 
 .hfont {
@@ -280,8 +266,6 @@
   color: $vicLogoMainColor;
 }
 
-
-
 hr.zig {
   background: url(/assets/zig.png) repeat-x;
   height: 5px;
@@ -289,8 +273,16 @@ hr.zig {
   margin: 6px 0 6px 0;
 }
 
+.spantitle {
+  @include header-type;
+}
+
 .nopad {
   padding: 0px !important;
+}
+
+.nomargin {
+  margin: 0px !important;
 }
 
 .button {
@@ -306,4 +298,11 @@ hr.zig {
 
 .productrange {
   margin-top: 6px;
+}
+
+.home-blurb {
+  padding: 6px;
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
