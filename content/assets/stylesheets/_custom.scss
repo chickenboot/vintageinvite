@@ -107,9 +107,11 @@
   h6 {
     margin: 9px 0 6px 0;
   }
-  h5 {
+}
 
-  }
+.latest {
+  margin: 0;
+  display: block;
 }
 
 ::-webkit-resizer {
@@ -274,7 +276,12 @@ hr.zig {
 }
 
 .spantitle {
-  @include header-type;
+  h6 {
+    @include header-type;
+    margin: 0 0 6px 0;  
+  }
+  text-align: center;
+  display: block;
 }
 
 .nopad {
@@ -302,6 +309,7 @@ hr.zig {
 
 .home-blurb {
   padding: 6px;
+  text-align: justify;
   p:last-child {
     margin-bottom: 0;
   }
