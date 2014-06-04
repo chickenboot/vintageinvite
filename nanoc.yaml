@@ -81,6 +81,7 @@ javascripts:
     - jquery
     - jquery.foundation.topbar
     - jquery.foundation.orbit
+    - jquery.foundation.forms
     - jquery.elevatezoom
   passthrough:
     - modernizr.foundation

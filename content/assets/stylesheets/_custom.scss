@@ -138,6 +138,17 @@
     form input[type="text"], form textarea {
       border: none;
     }
+    form.custom div.custom {
+      a.current, a.selector {
+        min-height: 32px;
+      }
+      a.current {
+        background-color: $inputBgColor !important;
+      }
+      a.selector {
+        background-color: $white;
+      }
+    }
   }
   .how-to-order, .terms, .faqs, .prices {
     h6 {

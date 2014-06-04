@@ -8,6 +8,7 @@ $('[data-orbit]').on('orbit:after-slide-change', function(e, orbit_info) {
 
 $(document).ready(function () {
   $(document).foundationTopBar();
+  $(document).foundationCustomForms();
 });
 
 $(function() {

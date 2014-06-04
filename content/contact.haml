@@ -6,39 +6,50 @@ title: Contact Us
   .contact
     .four.columns
       .sidebar
-        %h6 REQUEST A CALLBACK
-        %ul
-          %li Click Here
         %h6 EMAIL US
         %ul
           %li
+            %i.icon-envelope-alt.icon-fixed-width
             %a{:href => 'mailto:hello@thevintageinvite.com'} hello@thevintageinvite.com
         %h6 FOLLOW US
         %ul
           %li
             %a{:href => 'http://twitter.com/vintageinvite'}
               %i.icon-twitter.icon-fixed-width
-              twitter.com/vintageinvite
+              vintageinvite
           %li
             %a{:href => 'http://facebook.com/vintageinviteco'} 
               %i.icon-facebook-sign.icon-fixed-width
-              fb.me/vintageinviteco
+              vintageinviteco
           %li
             %a{:href => 'http://www.pinterest.com/vintageinvite/'} 
               %i.icon-pinterest-sign.icon-fixed-width
-              pinterest.com/vintageinvite
+              vintageinvite
+        %h6 TALK TO US
+        %ul
+          %li
+            %a{:href => 'skype:hello@thevintageinvite.com?call'}
+              %i.icon-skype.icon-fixed-width
+              hello@thevintageinvite.com
     .eight.columns
       .contact-form
         %h6 WE LOVE HEARING FROM YOU
         %p.hfont
-          Drop us an e-mail at
-          %a{:href => 'mailto:hello@thevintageinvite.com'} hello@thevintageinvite.com
-          or fill in our lovely contact form below:
-        %form
+          Fill in our form below, and we'll give you a call or drop you an e-mail tout suite!
+        %form.custom
           %label.hfont Name*
           %input{:type=>'text'}
-          %label.hfont Email*
+          %label.hfont Email
           %input{:type=>'text'}
+          .row
+            .six.columns
+              %label.hfont Telephone
+              %input{:type=>'text'}
+            .six.columns
+              %label.hfont Best Time to Call
+              %select
+                = ["---", "09:00 - 11:00", "11:00 - 13:00", "13:00 - 15:00", "15:00 - 17:00", "After 17:00"].each do |t|
+                  %option= t
           %label.hfont Subject
           %input{:type=>'text'}
           %label.hfont Message*
