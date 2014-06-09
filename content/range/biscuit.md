@@ -1,13 +1,13 @@
 ---
-title: Biscuitty
-product_title: THE BISCUIT
-product_blurb: Custart is my cream
+title: Custard Dream
+product_title: CUSTARD DREAM
+product_blurb: Warning &ndash; do not eat!
 images: 
   biscuit-invite: 'MAIN INVITE'
 in_development: true
 orbit: product-orbit
 ---
 
-Bacon ipsum dolor sit amet dolore occaecat cupidatat meatball, bresaola strip steak sed cow brisket pork belly. T-bone irure nisi cillum landjaeger in culpa meatball anim ea frankfurter fugiat chicken dolore. Boudin pig landjaeger, meatball turducken magna hamburger pastrami nisi do biltong. Dolore kielbasa ham 
+This unique invitation design is guaranteed to get your guests talking! The biscuit outer is a thick cotton stock which has your names and the (instantly recognisable) baroque pattern impressed deeply into the card. The cream card insert sports all of the details of your wedding.
 
-acon ipsum dolor sit amet dolore occaecat cupidatat meatball, bresaola strip steak sed cow brisket pork belly. T-bone irure nisi cillum landjaeger in culpa meatball anim ea frankfurter fugiat chicken dolore. Boudin pig landjaeger, meatball turducken magna hamburger pastrami nisi do biltong. Dolore kielbasa ham 
+This invitation is under development, <a href='/contact'>get in touch</a> for more information!

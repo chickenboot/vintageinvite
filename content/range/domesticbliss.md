@@ -1,7 +1,7 @@
 ---
 title: Domestic Bliss
 product_title: DOMESTIC BLISS
-product_blurb: Pingo pongo blappo jomes
+product_blurb: Our nod to the '50s commercial
 images: 
   domesticbliss-std: 'SAVE THE DATE'
   domesticbliss-invite: 'MAIN INVITE'

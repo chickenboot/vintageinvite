@@ -1,7 +1,7 @@
 ---
 title: Delightfully Dotty
 product_title: DELIGHTFULLY DOTTY
-product_blurb: Dot dot dot dot dash dash dash dot
+product_blurb: Timeless typography in polka parenthesis
 images: 
   dotty-std: 'SAVE THE DATE'
   dotty-invite: 'MAIN INVITE'

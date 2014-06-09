@@ -187,7 +187,7 @@
 
 }
 
-.faq, .how-to-order {
+.faq, .how-to-order, .bespoke {
   padding: 8px 0;
   .question, .order-title {
     padding: 4px 0; 
@@ -196,6 +196,10 @@
   ul {
     list-style-type: disc;
     list-style-position: inside;
+    li {
+      margin-left: 1em;
+      text-indent: -1em;      
+    }
   }
   line-height: 1.6;
 }

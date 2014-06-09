@@ -1,7 +1,7 @@
 ---
 title: Cherry Bomb
 product_title: CHERRY BOMB
-product_blurb: Sex bomb sex bomb
+product_blurb: Put a cherry on top
 images: 
   cherrybomb-std: 'SAVE THE DATE'
   cherrybomb-invite: 'MAIN INVITE'

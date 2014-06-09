@@ -24,6 +24,8 @@
             %a{:href => '#', :data => {:set_image => 'main-image', :set_image_src => "/assets/products/#{k}-medium.jpg"}}
               %img{:src => "/assets/products/#{k}-220.jpg"}
             %h6.text-center= v
+        - (4 - fours.length).times.each do |i|
+          .three.columns.mobile-two &nbsp;
   .row
     .twelve.columns
       .pinking-darkgrey &nbsp;

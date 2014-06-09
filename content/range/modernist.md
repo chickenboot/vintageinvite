@@ -1,13 +1,13 @@
 ---
 title: The Modernist
 product_title: THE MODERNIST
-product_blurb: Bridget Riley is the boss
+product_blurb: Monochrome optical art with striking type
 images: 
   bunkerstein-invite: 'MAIN INVITE'
 in_development: true
 orbit: product-orbit
 ---
 
-Bacon ipsum dolor sit amet dolore occaecat cupidatat meatball, bresaola strip steak sed cow brisket pork belly. T-bone irure nisi cillum landjaeger in culpa meatball anim ea frankfurter fugiat chicken dolore. Boudin pig landjaeger, meatball turducken magna hamburger pastrami nisi do biltong. Dolore kielbasa ham 
+This design was created for a bespoke client who was looking for a modernist theme, based on a cushion they loved. We were so pleased with the result that &ndash; with their permission &ndash; we've included it in our range.
 
-acon ipsum dolor sit amet dolore occaecat cupidatat meatball, bresaola strip steak sed cow brisket pork belly. T-bone irure nisi cillum landjaeger in culpa meatball anim ea frankfurter fugiat chicken dolore. Boudin pig landjaeger, meatball turducken magna hamburger pastrami nisi do biltong. Dolore kielbasa ham 
+The crisp monochrome lines and striking type are letterpressed onto a thick cotton stock, giving a deep impression which really brings this design to life.

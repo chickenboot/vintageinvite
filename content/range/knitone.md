@@ -1,7 +1,7 @@
 ---
 title: Knit One
 product_title: KNIT ONE
-product_blurb: Knit one, purl one, nip one, curl one
+product_blurb: Beautiful type and pastels knitted into the perfect package
 images: 
   knitone-std: 'SAVE THE DATE'
   knitone-invite: 'MAIN INVITE'
